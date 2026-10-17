@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Nom Nom – We Bake Memories · Vanderbijlpark</title>
+<meta name="description" content="Cakes and cupcakes for all occasions, baked by Alta in Vanderbijlpark. By appointment only.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700&family=Satisfy&display=swap" rel="stylesheet">
+<style>
+:root{
+  --magenta:#d9179a;
+  --magenta-deep:#a80f76;
+  --blush:#fde6f3;
+  --blush-2:#f9cfe8;
+  --cream:#fffaf5;
+  --cocoa:#4a3530;
+  --grey:#5e5a5a;
+  --cherry:#c81d4e;
+  --line:#efd9e5;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+body{margin:0;background:var(--cream);color:var(--cocoa);font:400 17px/1.6 "Nunito Sans",system-ui,sans-serif}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--magenta);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:"Fraunces",Georgia,serif;font-weight:600;line-height:1.1;margin:0;color:var(--cocoa)}
+.script{font-family:"Satisfy",cursive;font-weight:400}
+
+/* demo note */
+.demo-note{background:var(--cocoa);color:#fff;font-size:14px;text-align:center;padding:8px 16px}
+.demo-note a{color:var(--blush-2)}
+
+/* header */
+header{position:sticky;top:0;z-index:20;background:rgba(255,250,245,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;height:72px}
+.brand{display:flex;align-items:baseline;gap:10px;text-decoration:none}
+.brand .script{font-size:34px;color:var(--magenta);line-height:1}
+.brand .script b{font-weight:400;color:var(--grey)}
+.brand small{font-size:13px;letter-spacing:.04em;color:var(--grey)}
+.nav ul{display:flex;gap:26px;list-style:none;margin:0;padding:0;font-weight:600;font-size:15px}
+.nav ul a{text-decoration:none}
+.nav ul a:hover{color:var(--magenta)}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--magenta);color:#fff;text-decoration:none;font-weight:700;font-size:15px;padding:12px 20px;border-radius:999px;border:0;cursor:pointer;font-family:inherit}
+.btn:hover{background:var(--magenta-deep)}
+.btn.ghost{background:transparent;color:var(--cocoa);box-shadow:inset 0 0 0 2px var(--cocoa)}
+.btn.ghost:hover{background:var(--cocoa);color:#fff}
+
+/* hero */
+.hero{position:relative;background:var(--magenta);color:#fff;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background-image:radial-gradient(circle,rgba(255,255,255,.13) 22px,transparent 23px);background-size:76px 76px;background-position:12px 8px}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;padding-top:64px;padding-bottom:110px}
+.hero h1{color:#fff;font-size:clamp(46px,6.4vw,84px);letter-spacing:-.01em}
+.hero h1 .script{display:block;font-size:.62em;color:var(--blush-2);margin-bottom:6px;letter-spacing:0}
+.hero p.lead{font-size:20px;max-width:30ch;margin:22px 0 30px;color:#fff}
+.hero .btn{background:#fff;color:var(--magenta-deep)}
+.hero .btn:hover{background:var(--blush)}
+.hero .btn.ghost{background:transparent;color:#fff;box-shadow:inset 0 0 0 2px #fff}
+.hero .btn.ghost:hover{background:#fff;color:var(--magenta-deep)}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.facts{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:30px;font-size:15px;color:#fff}
+.facts span{display:inline-flex;align-items:center;gap:8px}
+.facts svg{flex:none}
+.stack{position:relative;height:540px}
+.stack figure{position:absolute;margin:0;background:#fff;padding:10px 10px 12px;border-radius:6px;box-shadow:0 18px 40px rgba(74,53,48,.28)}
+.stack figure img{border-radius:3px;object-fit:cover}
+.stack .a{left:4%;top:0;width:62%;transform:rotate(-3deg)}
+.stack .a img{aspect-ratio:4/5;object-position:center 20%}
+.stack .b{right:0;top:120px;width:46%;transform:rotate(4deg)}
+.stack .b img{aspect-ratio:3/4}
+.stack figcaption{font-family:"Satisfy",cursive;color:var(--grey);font-size:18px;text-align:center;padding-top:6px}
+/* scalloped, stitched edge from the Nom Nom cover */
+.scallop{position:absolute;left:0;right:0;bottom:-1px;height:46px;color:var(--cream)}
+.scallop svg{width:100%;height:100%;display:block}
+
+/* sections */
+section{padding:96px 0}
+.kicker{font-family:"Satisfy",cursive;color:var(--magenta);font-size:28px;line-height:1;margin-bottom:8px}
+.sec-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:40px}
+.sec-head h2{font-size:clamp(34px,4.2vw,52px);max-width:16ch}
+.sec-head p{max-width:40ch;margin:0;color:var(--grey)}
+
+/* gallery */
+.gallery{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:150px;gap:16px}
+.tile{position:relative;margin:0;border-radius:14px;overflow:hidden;background:var(--blush)}
+.tile img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+.tile:hover img{transform:scale(1.03)}
+.tile figcaption{position:absolute;left:12px;bottom:12px;background:rgba(255,250,245,.95);color:var(--cocoa);font-weight:700;font-size:14px;padding:6px 12px;border-radius:999px}
+.t1{grid-column:1/6;grid-row:1/5}
+.t2{grid-column:6/10;grid-row:1/3}
+.t3{grid-column:10/13;grid-row:1/3}
+.t4{grid-column:6/10;grid-row:3/5}
+.t5{grid-column:10/13;grid-row:3/5}
+
+/* occasions strip */
+.occasions{background:var(--blush)}
+.occ-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.occ{background:#fff;border-radius:18px;overflow:hidden;display:grid;grid-template-columns:44% 1fr}
+.occ img{height:100%;width:100%;object-fit:cover;min-height:260px}
+.occ div{padding:28px}
+.occ h3{font-size:26px;margin-bottom:10px}
+.occ p{margin:0 0 18px;color:var(--grey)}
+.occ .when{display:inline-block;font-weight:700;font-size:13px;color:var(--magenta-deep);background:var(--blush);padding:4px 12px;border-radius:999px;margin-bottom:14px}
+
+/* planner */
+.planner{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:start}
+.steps{list-style:none;margin:28px 0 0;padding:0;counter-reset:s}
+.steps li{counter-increment:s;display:grid;grid-template-columns:52px 1fr;gap:14px;padding:18px 0;border-top:2px dashed var(--line)}
+.steps li::before{content:counter(s);width:44px;height:44px;border-radius:50%;background:var(--magenta);color:#fff;font:600 20px/44px "Fraunces",serif;text-align:center}
+.steps b{display:block;font-size:18px}
+.steps span{color:var(--grey)}
+form.card{background:#fff;border:2px solid var(--line);border-radius:22px;padding:30px;box-shadow:0 20px 50px rgba(217,23,154,.08)}
+form.card h3{font-size:28px;margin-bottom:6px}
+form.card > p{margin:0 0 20px;color:var(--grey)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px;border:0;padding:0}
+.chips legend{font-weight:700;font-size:14px;margin-bottom:8px;padding:0}
+.chips label{cursor:pointer}
+.chips input{position:absolute;opacity:0}
+.chips span{display:inline-block;padding:8px 14px;border-radius:999px;border:2px solid var(--line);font-weight:600;font-size:14px}
+.chips input:checked + span{background:var(--magenta);border-color:var(--magenta);color:#fff}
+.chips input:focus-visible + span{outline:3px solid var(--magenta);outline-offset:2px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.field{display:flex;flex-direction:column;gap:6px;margin-bottom:14px;font-weight:700;font-size:14px}
+.field input,.field textarea{font:inherit;font-weight:400;font-size:16px;border:2px solid var(--line);border-radius:12px;padding:11px 13px;background:var(--cream);color:var(--cocoa)}
+.field textarea{min-height:84px;resize:vertical}
+.preview{background:var(--blush);border-radius:14px;padding:14px 16px;font-size:15px;white-space:pre-line;margin:6px 0 16px;color:var(--cocoa)}
+.preview b{display:block;font-size:12px;letter-spacing:.06em;color:var(--magenta-deep);margin-bottom:4px}
+.small{font-size:13px;color:var(--grey);margin-top:12px}
+
+/* review */
+.review{background:var(--cocoa);color:#fff;text-align:center}
+.review blockquote{margin:0 auto;max-width:28ch;font:500 clamp(28px,3.6vw,44px)/1.25 "Fraunces",serif}
+.review .stars{color:#ffb4dd;letter-spacing:4px;font-size:22px;margin-bottom:22px}
+.review cite{display:block;margin-top:22px;font-style:normal;color:var(--blush-2)}
+
+/* contact */
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.contact dl{margin:24px 0 28px;display:grid;grid-template-columns:auto 1fr;gap:12px 22px}
+.contact dt{font-weight:700}
+.contact dd{margin:0;color:var(--grey)}
+.contact .cover{border-radius:18px;overflow:hidden;box-shadow:0 18px 40px rgba(74,53,48,.15)}
+footer{border-top:1px solid var(--line);padding:28px 0;font-size:14px;color:var(--grey)}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+/* Zara chat */
+.zara-btn{position:fixed;right:20px;bottom:20px;z-index:40;display:flex;align-items:center;gap:10px;background:var(--cocoa);color:#fff;border:0;border-radius:999px;padding:12px 18px 12px 12px;font:700 15px "Nunito Sans",sans-serif;cursor:pointer;box-shadow:0 12px 30px rgba(0,0,0,.25)}
+.zara-btn i{width:34px;height:34px;border-radius:50%;background:var(--magenta);display:grid;place-items:center;font-style:normal;font-family:"Satisfy",cursive;font-size:20px}
+.chat{position:fixed;right:20px;bottom:86px;z-index:41;width:min(370px,calc(100vw - 32px));height:min(540px,calc(100vh - 120px));background:#fff;border-radius:20px;box-shadow:0 24px 60px rgba(0,0,0,.25);display:none;flex-direction:column;overflow:hidden}
+.chat.open{display:flex}
+.chat-top{background:var(--magenta);color:#fff;padding:14px 16px;display:flex;justify-content:space-between;align-items:center}
+.chat-top b{display:block}
+.chat-top small{opacity:.9}
+.chat-top button{background:none;border:0;color:#fff;font-size:24px;cursor:pointer;line-height:1}
+.log{flex:1;overflow:auto;padding:16px;display:flex;flex-direction:column;gap:10px;background:var(--cream)}
+.msg{max-width:85%;padding:10px 13px;border-radius:14px;font-size:15px;line-height:1.45}
+.msg.z{background:#fff;border:1px solid var(--line);align-self:flex-start;border-bottom-left-radius:4px}
+.msg.u{background:var(--magenta);color:#fff;align-self:flex-end;border-bottom-right-radius:4px}
+.quick{display:flex;flex-wrap:wrap;gap:6px;padding:10px 12px;border-top:1px solid var(--line)}
+.quick button{font:600 13px "Nunito Sans",sans-serif;border:2px solid var(--line);background:#fff;color:var(--cocoa);border-radius:999px;padding:6px 11px;cursor:pointer}
+.quick button:hover{border-color:var(--magenta)}
+.ask{display:flex;gap:8px;padding:10px 12px 14px}
+.ask input{flex:1;font:inherit;font-size:15px;border:2px solid var(--line);border-radius:999px;padding:9px 14px}
+.ask button{border:0;background:var(--magenta);color:#fff;border-radius:999px;padding:0 16px;font-weight:700;cursor:pointer}
+.chat-note{font-size:11px;color:var(--grey);text-align:center;padding:0 12px 10px}
+
+@media (max-width:900px){
+  .nav ul{display:none}
+  .hero .wrap,.planner,.contact,.occ-grid{grid-template-columns:1fr}
+  .hero .wrap{padding-top:44px;gap:28px}
+  .stack{height:auto;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .stack figure{position:static;width:auto!important;transform:none!important}
+  .sec-head{flex-direction:column;align-items:start}
+  .gallery{grid-template-columns:1fr 1fr;grid-auto-rows:180px}
+  .gallery .tile{grid-column:auto!important;grid-row:auto!important}
+  .gallery .t1{grid-column:1/3!important;grid-row:span 2!important}
+  .occ{grid-template-columns:1fr}
+  .occ img{min-height:0;aspect-ratio:4/3}
+  section{padding:68px 0}
+}
+@media (max-width:480px){
+  .brand small{display:none}
+  .nav .btn{padding:10px 14px;font-size:14px}
+  .row{grid-template-columns:1fr}
+  .zara-btn span{display:none}
+  .zara-btn{padding:12px}
+}
+</style>
+</head>
+<body>
+
+<div class="demo-note">A demo website Hello Zara designed for Alta at Nom Nom. Nothing here is live until she says so. <a href="https://hellozara.solutions">hellozara.solutions</a></div>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="Nom Nom – We Bake Memories, home">
+      <span class="script">Nom <b>nom</b></span><small>we bake memories</small>
+    </a>
+    <ul>
+      <li><a href="#cakes">Cakes</a></li>
+      <li><a href="#occasions">Treat boxes</a></li>
+      <li><a href="#order">How to order</a></li>
+      <li><a href="#contact">Find us</a></li>
+    </ul>
+    <a class="btn" href="https://wa.me/27823717092" target="_blank" rel="noopener">WhatsApp Alta</a>
+  </div>
+</header>
+
+<main id="top">
+<div class="hero">
+  <div class="wrap">
+    <div>
+      <h1><span class="script">Nom nom</span>We bake memories.</h1>
+      <p class="lead">Cakes and cupcakes for all occasions, baked by Alta in Vanderbijlpark.</p>
+      <div class="actions">
+        <a class="btn" href="#order">Plan your cake</a>
+        <a class="btn ghost" href="#cakes">See her work</a>
+      </div>
+      <div class="facts">
+        <span><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3 6.6 7.2.7-5.4 4.8 1.6 7.1L12 17.6 5.6 21.2l1.6-7.1L1.8 9.3 9 8.6z"/></svg>4.6 on Google · 27 reviews</span>
+        <span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Vanderbijlpark SW2</span>
+        <span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>By appointment only</span>
+      </div>
+    </div>
+    <div class="stack" aria-label="Some of Alta's cakes">
+      <figure class="a"><img src="img/golf-cake.jpg" alt="A golf-themed cake with matching cupcakes in a gift box" width="760" height="1015"><figcaption>a golfer's birthday</figcaption></figure>
+      <figure class="b"><img src="img/rosette-cupcakes.jpg" alt="Pink and blue rosette cupcakes with white sugar flowers" width="760" height="1015"><figcaption>pink &amp; blue rosettes</figcaption></figure>
+    </div>
+  </div>
+  <div class="scallop" aria-hidden="true">
+    <svg viewBox="0 0 1200 46" preserveAspectRatio="none">
+      <path fill="currentColor" d="M0 46V22c25 0 25-18 50-18s25 18 50 18 25-18 50-18 25 18 50 18 25-18 50-18 25 18 50 18 25-18 50-18 25 18 50 18 25-18 50-18 25 18 50 18 25-18 50-18 25 18 50 18 25-18 50-18 25 18 50 18 25-18 50-18 25 18 50 18 25-18 50-18 25 18 50 18 25-18 50-18 25 18 50 18 25-18 50-18 25 18 50 18 25-18 50-18 25 18 50 18v24z"/>
+      <path fill="none" stroke="#fff" stroke-width="2.5" stroke-dasharray="6 7" d="M0 13c25 0 25-14 50-14s25 14 50 14 25-14 50-14 25 14 50 14 25-14 50-14 25 14 50 14 25-14 50-14 25 14 50 14 25-14 50-14 25 14 50 14 25-14 50-14 25 14 50 14 25-14 50-14 25 14 50 14 25-14 50-14 25 14 50 14 25-14 50-14 25 14 50 14 25-14 50-14 25 14 50 14 25-14 50-14 25 14 50 14 25-14 50-14 25 14 50 14" transform="translate(0 6)"/>
+    </svg>
+  </div>
+</div>
+
+<section id="cakes">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><div class="kicker">from Alta's kitchen</div><h2>Every one made for someone.</h2></div>
+      <p>A few recent bakes. Tell Alta what you have in mind and she'll make it yours.</p>
+    </div>
+    <div class="gallery">
+      <figure class="tile t1"><img src="img/golf-cake.jpg" alt="Golf-themed cake with cupcakes" loading="lazy"><figcaption>Birthday cake &amp; cupcakes</figcaption></figure>
+      <figure class="tile t2"><img src="img/tiara-cupcakes.jpg" alt="Pastel cupcakes topped with silver tiaras" loading="lazy"><figcaption>Tiara cupcakes</figcaption></figure>
+      <figure class="tile t3"><img src="img/pink-ribbon-cupcakes.jpg" alt="Cupcakes with pink ribbon toppers" loading="lazy"><figcaption>Pink ribbon</figcaption></figure>
+      <figure class="tile t4"><img src="img/hunting-cupcakes.jpg" alt="Hunting-themed cupcakes with buck silhouettes and green icing" loading="lazy" style="object-position:center 30%"><figcaption>Hunting theme</figcaption></figure>
+      <figure class="tile t5"><img src="img/bunny-cupcakes.jpg" alt="Cupcakes with bunny ears and pink flowers" loading="lazy"><figcaption>Bunny cupcakes</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="occasions" class="occasions">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><div class="kicker">more than cake</div><h2>Treat boxes for the people who matter.</h2></div>
+      <p>Alta also makes gift boxes for special days, so saying thank you is easy.</p>
+    </div>
+    <div class="occ-grid">
+      <article class="occ">
+        <img src="img/bosses-day-boxes.jpg" alt="White gift boxes with a Happy Boss's Day label, gold ribbon and treats" loading="lazy">
+        <div><span class="when">Boss's Day</span><h3>Thank the boss</h3><p>Gift boxes with a Happy Boss's Day label, tied with gold ribbon and filled with treats.</p><a class="btn ghost" href="#order" data-occ="Boss's Day box">Ask about boxes</a></div>
+      </article>
+      <article class="occ">
+        <img src="img/teachers-day-range.jpg" alt="Teacher's Day gift boxes, a Best Teacher mug and treat bags" loading="lazy">
+        <div><span class="when">Teacher's Day</span><h3>For a favourite teacher</h3><p>Boxes, mugs and treat bags with a thank-you message for Teacher's Day.</p><a class="btn ghost" href="#order" data-occ="Teacher's Day box">Ask about boxes</a></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="order">
+  <div class="wrap planner">
+    <div>
+      <div class="kicker">how to order</div>
+      <h2 style="font-size:clamp(34px,4.2vw,52px)">Your cake, planned in a minute.</h2>
+      <ol class="steps">
+        <li><div><b>Tell Alta about the day</b><span>The occasion, the date and how many people.</span></div></li>
+        <li><div><b>Share your idea</b><span>A theme, colours or a photo you love. She'll come back to you on the design.</span></div></li>
+        <li><div><b>Collect in Vanderbijlpark</b><span>Collection is by appointment only.</span></div></li>
+      </ol>
+    </div>
+    <form class="card" id="planner" novalidate>
+      <h3>Plan your cake</h3>
+      <p>Fill this in and it becomes a WhatsApp message to Alta.</p>
+      <fieldset class="chips">
+        <legend>What are we baking?</legend>
+        <label><input type="radio" name="what" value="Cake" checked><span>Cake</span></label>
+        <label><input type="radio" name="what" value="Cupcakes"><span>Cupcakes</span></label>
+        <label><input type="radio" name="what" value="Cake and cupcakes"><span>Cake + cupcakes</span></label>
+        <label><input type="radio" name="what" value="Treat boxes"><span>Treat boxes</span></label>
+      </fieldset>
+      <div class="row">
+        <label class="field">Occasion<input id="occ" placeholder="e.g. 40th birthday"></label>
+        <label class="field">Date needed<input id="date" type="date"></label>
+      </div>
+      <div class="row">
+        <label class="field">How many people?<input id="people" inputmode="numeric" placeholder="e.g. 20"></label>
+        <label class="field">Your name<input id="name" autocomplete="given-name" placeholder="First name"></label>
+      </div>
+      <label class="field">Theme or idea<textarea id="idea" placeholder="Colours, a theme, a name on top…"></textarea></label>
+      <div class="preview" aria-live="polite"><b>YOUR MESSAGE TO ALTA</b><span id="msg"></span></div>
+      <button class="btn" type="submit">Send on WhatsApp</button>
+      <p class="small">Demo: in the live version this also lands in Alta's inbox, and you get a reminder before collection.</p>
+    </form>
+  </div>
+</section>
+
+<section class="review">
+  <div class="wrap">
+    <div class="stars" aria-label="5 stars">★★★★★</div>
+    <blockquote>“We’ve been ordering from NomNom Cakes for years, and Alta never disappoints!”</blockquote>
+    <cite>Thandi, Google review</cite>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap contact">
+    <div>
+      <div class="kicker">come say hello</div>
+      <h2 style="font-size:clamp(34px,4.2vw,52px)">Find Nom Nom</h2>
+      <dl>
+        <dt>Where</dt><dd>Vanderbijlpark SW2</dd>
+        <dt>Visits</dt><dd>By appointment only</dd>
+        <dt>WhatsApp</dt><dd><a href="https://wa.me/27823717092" target="_blank" rel="noopener">082 371 7092</a></dd>
+        <dt>Facebook</dt><dd><a href="https://www.facebook.com/NomNomWeBakeMemories" target="_blank" rel="noopener">Nom Nom – We Bake Memories</a></dd>
+      </dl>
+      <a class="btn" href="https://wa.me/27823717092" target="_blank" rel="noopener">WhatsApp Alta</a>
+    </div>
+    <div class="cover"><img src="img/cover.jpg" alt="Nom Nom – we bake memories, pink polka-dot banner with a cupcake" loading="lazy"></div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap"><span>© Nom Nom – We Bake Memories · Vanderbijlpark</span><span>Demo by <a href="https://hellozara.solutions">Hello Zara</a></span></div>
+</footer>
+
+<button class="zara-btn" id="zaraOpen" aria-expanded="false" aria-controls="chat"><i>Z</i><span>Ask Zara</span></button>
+<div class="chat" id="chat" role="dialog" aria-label="Chat with Zara">
+  <div class="chat-top"><div><b>Zara · Nom Nom</b><small>Alta's assistant (demo)</small></div><button id="zaraClose" aria-label="Close chat">×</button></div>
+  <div class="log" id="log" aria-live="polite"></div>
+  <div class="quick" id="quick">
+    <button data-q="order">Order a cake</button>
+    <button data-q="where">Where are you?</button>
+    <button data-q="what">What do you bake?</button>
+    <button data-q="price">How much?</button>
+  </div>
+  <form class="ask" id="ask"><input id="askIn" placeholder="Type a question…" aria-label="Your question"><button>Send</button></form>
+  <div class="chat-note">Demo chat by Hello Zara</div>
+</div>
+
+<script>
+const WA='27823717092';
+const $=s=>document.querySelector(s);
+function buildMsg(){
+  const what=document.querySelector('input[name=what]:checked').value;
+  const occ=$('#occ').value.trim(), d=$('#date').value, p=$('#people').value.trim(), n=$('#name').value.trim(), idea=$('#idea').value.trim();
+  let date='';
+  if(d){const dt=new Date(d+'T12:00');date=dt.toLocaleDateString('en-ZA',{weekday:'long',day:'numeric',month:'long'});}
+  const lines=[`Hi Alta${n?', this is '+n:''}! I'd like to order: ${what}.`];
+  if(occ)lines.push(`Occasion: ${occ}`);
+  if(date)lines.push(`Needed on: ${date}`);
+  if(p)lines.push(`For about ${p} people`);
+  if(idea)lines.push(`Idea: ${idea}`);
+  return lines.join('\n');
+}
+function refresh(){$('#msg').textContent=buildMsg();}
+$('#planner').addEventListener('input',refresh);
+$('#planner').addEventListener('submit',e=>{e.preventDefault();window.open('https://wa.me/'+WA+'?text='+encodeURIComponent(buildMsg()),'_blank','noopener');});
+document.querySelectorAll('[data-occ]').forEach(a=>a.addEventListener('click',()=>{
+  document.querySelector('input[name=what][value="Treat boxes"]').checked=true;$('#occ').value=a.dataset.occ;refresh();}));
+refresh();
+
+/* scripted demo chat: answers only from Nom Nom's own page */
+const log=$('#log'),chat=$('#chat');
+let step=null,order={};
+function say(t,who='z'){const m=document.createElement('div');m.className='msg '+who;m.textContent=t;log.appendChild(m);log.scrollTop=log.scrollHeight;}
+function open(){chat.classList.add('open');$('#zaraOpen').setAttribute('aria-expanded','true');if(!log.children.length)say("Hi! I'm Zara, Alta's assistant at Nom Nom. I can help you start a cake order or answer a quick question.");$('#askIn').focus();}
+$('#zaraOpen').onclick=()=>chat.classList.contains('open')?close():open();
+function close(){chat.classList.remove('open');$('#zaraOpen').setAttribute('aria-expanded','false');}
+$('#zaraClose').onclick=close;
+const A={
+  where:"Nom Nom is in Vanderbijlpark SW2. Collection is by appointment only, so Alta will give you a time when you order.",
+  what:"Alta bakes cakes for all occasions, plus cupcakes and treat boxes for days like Boss's Day and Teacher's Day. Scroll up to see some of her recent work.",
+  price:"Every cake is made to order, so Alta quotes per design. Tell me what you have in mind and I'll make sure she sees it.",
+};
+function answer(q){
+  q=q.toLowerCase();
+  if(step){return orderFlow(q);}
+  if(/order|book|cake for|bestel/.test(q))return startOrder();
+  if(/where|address|located|waar|collect/.test(q))return say(A.where);
+  if(/price|cost|how much|r\d|prys|hoeveel/.test(q))return say(A.price);
+  if(/what|bake|cupcake|box|flavour/.test(q))return say(A.what);
+  say("Good question! I'll make sure Alta sees it. You can also WhatsApp her on 082 371 7092.");
+}
+function startOrder(){step='occ';order={};say("Lovely! What's the occasion?");}
+function orderFlow(q){
+  if(step==='occ'){order.occ=q;step='date';return say("And what date do you need it?");}
+  if(step==='date'){order.date=q;step='people';return say("About how many people?");}
+  if(step==='people'){order.people=q;step='name';return say("Last one: what's your name?");}
+  if(step==='name'){order.name=q;step=null;
+    say(`Thanks, ${q.replace(/^./,c=>c.toUpperCase())}! I've noted: ${order.occ}, ${order.date}, about ${order.people} people.`);
+    return say("In the live version Alta gets this straight away and comes back to you on design and price. You'll get a reminder before collection.");}
+}
+$('#quick').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;say(b.textContent,'u');
+  if(b.dataset.q==='order'){step=null;startOrder();}else{step=null;say(A[b.dataset.q]);}});
+$('#ask').addEventListener('submit',e=>{e.preventDefault();const v=$('#askIn').value.trim();if(!v)return;say(v,'u');$('#askIn').value='';setTimeout(()=>answer(v),350);});
+</script>
+</body>
+</html>
