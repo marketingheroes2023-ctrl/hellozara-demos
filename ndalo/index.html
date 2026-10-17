@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Creative Bakes by Ndalo · Bophelong, Vanderbijlpark</title>
+<meta name="description" content="Exquisite, mouth watering delicacies. Dream it, we make it. Custom cakes and cupcakes in Bophelong, Vanderbijlpark.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@400;500;600&family=Pinyon+Script&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ivory:#faf6f1;
+  --blush:#f4d3dc;
+  --blush-soft:#fbecf0;
+  --rose:#c06d86;
+  --ink:#1d1a1a;
+  --gold:#b08a45;
+  --muted:#6e6461;
+  --line:#e9dcd5;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{margin:0;background:var(--ivory);color:var(--ink);font:400 17px/1.65 "Jost",system-ui,sans-serif}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--rose);outline-offset:3px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;line-height:1.05;margin:0}
+.script{font-family:"Pinyon Script",cursive;font-weight:400}
+
+.demo-note{background:var(--ink);color:#eee;font-size:14px;text-align:center;padding:8px 16px}
+.demo-note a{color:var(--blush)}
+
+header{position:sticky;top:0;z-index:20;background:rgba(250,246,241,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;height:78px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand img{width:54px;height:54px;border-radius:50%}
+.brand span{font-family:"Pinyon Script",cursive;font-size:30px;line-height:1}
+.brand small{display:block;font-size:11px;letter-spacing:.24em;color:var(--muted);margin-top:2px}
+.nav ul{display:flex;gap:30px;list-style:none;margin:0;padding:0;font-size:15px;font-weight:500}
+.nav ul a{text-decoration:none}
+.nav ul a:hover{color:var(--rose)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--ink);color:#fff;text-decoration:none;font:500 15px "Jost",sans-serif;letter-spacing:.04em;padding:14px 26px;border:0;border-radius:0;cursor:pointer}
+.btn:hover{background:#3a3433}
+.btn.soft{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1px var(--ink)}
+.btn.soft:hover{background:var(--ink);color:#fff}
+
+/* hero: three cakes in arches */
+.hero .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:center;padding-top:64px;padding-bottom:80px}
+.hero .script{font-size:44px;color:var(--rose);display:block;margin-bottom:4px}
+.hero h1{font-size:clamp(50px,6.4vw,86px)}
+.hero p{font-size:19px;color:var(--muted);max-width:34ch;margin:22px 0 32px}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.facts{display:flex;flex-wrap:wrap;gap:8px 26px;margin-top:34px;font-size:15px;color:var(--muted)}
+.facts b{color:var(--ink);font-weight:600}
+.arches{display:grid;grid-template-columns:1fr 1.15fr 1fr;gap:16px;align-items:end}
+.arch{margin:0;border-radius:999px 999px 0 0;overflow:hidden;background:var(--blush);position:relative}
+.arch img{width:100%;aspect-ratio:3/5;object-fit:cover}
+.arches .mid img{aspect-ratio:3/5.6}
+.arch::after{content:"";position:absolute;inset:8px 8px 0;border:1px solid rgba(255,255,255,.75);border-bottom:0;border-radius:999px 999px 0 0;pointer-events:none}
+
+/* tagline band */
+.band{background:var(--blush);text-align:center;padding:46px 24px}
+.band p{margin:0;font-family:"Pinyon Script",cursive;font-size:clamp(40px,5vw,64px);line-height:1.1}
+
+section{padding:96px 0}
+.label{font-size:13px;letter-spacing:.24em;color:var(--rose);font-weight:600;margin-bottom:12px}
+.head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:44px}
+.head h2{font-size:clamp(38px,4.6vw,58px);max-width:15ch}
+.head p{margin:0;color:var(--muted);max-width:40ch}
+
+/* occasions */
+.occ{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.occ figure{margin:0}
+.occ img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.occ figcaption{padding:14px 2px 0}
+.occ h3{font-size:26px}
+.occ figcaption p{margin:4px 0 0;color:var(--muted);font-size:15px}
+
+/* brief builder */
+.brief{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.brief .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:64px;align-items:start}
+.brief aside h2{font-size:clamp(38px,4.6vw,58px)}
+.brief aside p{color:var(--muted);max-width:36ch}
+.brief aside ol{margin:26px 0 0;padding:0;list-style:none;counter-reset:b}
+.brief aside li{counter-increment:b;display:flex;gap:16px;padding:14px 0;border-top:1px solid var(--line)}
+.brief aside li::before{content:counter(b);font:500 30px/1 "Cormorant Garamond",serif;color:var(--gold);width:22px}
+form{display:block}
+fieldset{border:0;padding:0;margin:0 0 22px}
+legend{font-size:13px;letter-spacing:.18em;font-weight:600;margin-bottom:10px;padding:0}
+.pills{display:flex;flex-wrap:wrap;gap:8px}
+.pills label{position:relative;cursor:pointer}
+.pills input{position:absolute;opacity:0}
+.pills span{display:inline-block;padding:9px 16px;border:1px solid var(--line);font-size:15px;background:var(--ivory)}
+.pills input:checked + span{background:var(--ink);color:#fff;border-color:var(--ink)}
+.pills input:focus-visible + span{outline:2px solid var(--rose);outline-offset:2px}
+.swatches span{display:inline-flex;align-items:center;gap:8px}
+.swatches i{width:16px;height:16px;border-radius:50%;display:inline-block;border:1px solid rgba(0,0,0,.15)}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.field{display:flex;flex-direction:column;gap:6px;margin-bottom:16px;font-size:13px;letter-spacing:.14em;font-weight:600}
+.field input,.field textarea{font:400 16px "Jost",sans-serif;letter-spacing:0;border:0;border-bottom:1px solid #cdbdb5;background:transparent;padding:10px 2px;color:var(--ink)}
+.field input:focus,.field textarea:focus{outline:none;border-bottom-color:var(--rose)}
+.field textarea{min-height:70px;resize:vertical}
+.out{background:var(--blush-soft);padding:16px 18px;white-space:pre-line;font-size:15px;margin:6px 0 18px}
+.out b{display:block;font-size:12px;letter-spacing:.18em;color:var(--rose);margin-bottom:4px}
+.small{font-size:13px;color:var(--muted);margin-top:12px}
+
+/* contact */
+.contact .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.contact h2{font-size:clamp(38px,4.6vw,58px)}
+.contact dl{display:grid;grid-template-columns:auto 1fr;gap:12px 26px;margin:24px 0 30px}
+.contact dt{font-size:13px;letter-spacing:.18em;font-weight:600}
+.contact dd{margin:0;color:var(--muted)}
+.contact .ph{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.contact .ph img{aspect-ratio:3/4;object-fit:cover;width:100%}
+.contact .ph img:last-child{margin-top:40px}
+footer{border-top:1px solid var(--line);padding:26px 0;font-size:14px;color:var(--muted)}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+
+/* Zara */
+.zara-btn{position:fixed;right:20px;bottom:20px;z-index:40;display:flex;align-items:center;gap:10px;background:var(--ink);color:#fff;border:0;border-radius:999px;padding:11px 18px 11px 11px;font:500 15px "Jost",sans-serif;cursor:pointer;box-shadow:0 12px 30px rgba(0,0,0,.25)}
+.zara-btn i{width:34px;height:34px;border-radius:50%;background:var(--blush);color:var(--ink);display:grid;place-items:center;font:28px/1 "Pinyon Script",cursive;font-style:normal}
+.chat{position:fixed;right:20px;bottom:84px;z-index:41;width:min(370px,calc(100vw - 32px));height:min(540px,calc(100vh - 120px));background:#fff;box-shadow:0 24px 60px rgba(0,0,0,.25);display:none;flex-direction:column;overflow:hidden;border-radius:16px}
+.chat.open{display:flex}
+.chat-top{background:var(--ink);color:#fff;padding:14px 16px;display:flex;justify-content:space-between;align-items:center}
+.chat-top b{display:block;font-weight:500}
+.chat-top small{opacity:.8}
+.chat-top button{background:none;border:0;color:#fff;font-size:24px;cursor:pointer;line-height:1}
+.log{flex:1;overflow:auto;padding:16px;display:flex;flex-direction:column;gap:10px;background:var(--ivory)}
+.msg{max-width:86%;padding:10px 13px;font-size:15px;line-height:1.45;border-radius:12px}
+.msg.z{background:#fff;border:1px solid var(--line);align-self:flex-start}
+.msg.u{background:var(--blush);align-self:flex-end}
+.quick{display:flex;flex-wrap:wrap;gap:6px;padding:10px 12px;border-top:1px solid var(--line)}
+.quick button{font:500 13px "Jost",sans-serif;border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:999px;padding:6px 11px;cursor:pointer}
+.quick button:hover{border-color:var(--rose)}
+.ask{display:flex;gap:8px;padding:10px 12px 14px}
+.ask input{flex:1;font:inherit;font-size:15px;border:1px solid var(--line);border-radius:999px;padding:9px 14px}
+.ask button{border:0;background:var(--ink);color:#fff;border-radius:999px;padding:0 16px;cursor:pointer}
+.chat-note{font-size:11px;color:var(--muted);text-align:center;padding:0 12px 10px}
+
+@media (max-width:900px){
+  .nav ul{display:none}
+  .hero .wrap,.brief .wrap,.contact .wrap{grid-template-columns:1fr}
+  .hero .wrap{padding-top:40px;gap:36px}
+  .head{flex-direction:column;align-items:start}
+  .occ{grid-template-columns:1fr 1fr}
+  section{padding:68px 0}
+}
+@media (max-width:520px){
+  .brand small{display:none}
+  .brand span{font-size:24px}
+  .nav .btn{padding:11px 14px;font-size:14px}
+  .arches{gap:8px}
+  .row{grid-template-columns:1fr}
+  .occ{gap:14px}
+  .occ h3{font-size:21px}
+  .zara-btn span{display:none}
+  .zara-btn{padding:11px}
+}
+</style>
+</head>
+<body>
+
+<div class="demo-note">A demo website Hello Zara designed for Ndalo at Creative Bakes. Nothing here is live until she says so. <a href="https://hellozara.solutions">hellozara.solutions</a></div>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="Creative Bakes by Ndalo, home">
+      <img src="img/logo.jpg" alt="" width="54" height="54">
+      <div><span>Creative Bakes</span><small>BY NDALO</small></div>
+    </a>
+    <ul>
+      <li><a href="#cakes">Cakes</a></li>
+      <li><a href="#design">Design your cake</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a class="btn" href="#design">Order a cake</a>
+  </div>
+</header>
+
+<main id="top">
+<div class="hero">
+  <div class="wrap">
+    <div>
+      <h1>Cakes made for your biggest days.</h1>
+      <p>Exquisite, mouth watering delicacies from Creative Bakes by Ndalo in Bophelong, Vanderbijlpark.</p>
+      <div class="actions">
+        <a class="btn" href="#design">Design your cake</a>
+        <a class="btn soft" href="#cakes">See her cakes</a>
+      </div>
+      <div class="facts">
+        <span><b>4.9</b> on Google · 40 reviews</span>
+        <span>Collection or <b>delivery</b></span>
+      </div>
+    </div>
+    <div class="arches" aria-label="Three of Ndalo's cakes">
+      <figure class="arch"><img src="img/21st-grad-cake.jpg" alt="White and gold cake with a Congrats Grad topper and a #21" width="660" height="885"></figure>
+      <figure class="arch mid"><img src="img/wedding-cake.jpg" alt="Three-tier white wedding cake with sugar roses, gold lace and a jewelled brooch" width="554" height="885" style="object-position:center 40%"></figure>
+      <figure class="arch"><img src="img/shes-a-graduate.jpg" alt="Black and white graduation cake with a graduate figure, books and balloons" width="660" height="885"></figure>
+    </div>
+  </div>
+</div>
+
+<div class="band"><p>Dream it, we make it.</p></div>
+
+<section id="cakes">
+  <div class="wrap">
+    <div class="head">
+      <div><div class="label">RECENT CAKES</div><h2>Every celebration, its own cake.</h2></div>
+      <p>Each cake is designed for the person it's for: their milestone, their colours, their words on top.</p>
+    </div>
+    <div class="occ">
+      <figure><img src="img/wedding-cake.jpg" alt="Three-tier white and gold wedding cake" loading="lazy"><figcaption><h3>Weddings</h3><p>Tiered cakes with sugar roses and lace.</p></figcaption></figure>
+      <figure><img src="img/congrats-papa.jpg" alt="White graduation cake with a mortarboard, scroll, books and black and gold spheres" loading="lazy"><figcaption><h3>Graduations</h3><p>Caps, scrolls and gold lettering.</p></figcaption></figure>
+      <figure><img src="img/21st-grad-cake.jpg" alt="White buttercream cake with gold lettering and a #21" loading="lazy"><figcaption><h3>Milestone birthdays</h3><p>21sts and big birthdays, made personal.</p></figcaption></figure>
+      <figure><img src="img/grad-cupcakes.jpg" alt="A small graduation cake with matching cupcakes in a gift box" loading="lazy"><figcaption><h3>Cake &amp; cupcake boxes</h3><p>A cake with matching cupcakes, boxed.</p></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="design" class="brief">
+  <div class="wrap">
+    <aside>
+      <div class="label">DESIGN YOUR CAKE</div>
+      <h2>Tell Ndalo your dream.</h2>
+      <p>Choose a few things below and it becomes a WhatsApp message to Ndalo, so she has everything she needs to quote.</p>
+      <ol>
+        <li><span>Pick the occasion and a style</span></li>
+        <li><span>Add the date, guests and words on top</span></li>
+        <li><span>Send it on WhatsApp and Ndalo takes it from there</span></li>
+      </ol>
+    </aside>
+    <form id="f" novalidate>
+      <fieldset>
+        <legend>OCCASION</legend>
+        <div class="pills">
+          <label><input type="radio" name="occ" value="Birthday" checked><span>Birthday</span></label>
+          <label><input type="radio" name="occ" value="21st birthday"><span>21st</span></label>
+          <label><input type="radio" name="occ" value="Graduation"><span>Graduation</span></label>
+          <label><input type="radio" name="occ" value="Wedding"><span>Wedding</span></label>
+          <label><input type="radio" name="occ" value="Kids' party"><span>Kids' party</span></label>
+          <label><input type="radio" name="occ" value="Cupcakes"><span>Cupcakes</span></label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>STYLE</legend>
+        <div class="pills swatches">
+          <label><input type="radio" name="style" value="White & gold" checked><span><i style="background:linear-gradient(135deg,#fff 50%,#c9a45a 50%)"></i>White &amp; gold</span></label>
+          <label><input type="radio" name="style" value="Black & gold"><span><i style="background:linear-gradient(135deg,#1d1a1a 50%,#c9a45a 50%)"></i>Black &amp; gold</span></label>
+          <label><input type="radio" name="style" value="Pastel"><span><i style="background:linear-gradient(135deg,#f4c6d4 50%,#bfe3d8 50%)"></i>Pastel</span></label>
+          <label><input type="radio" name="style" value="My own theme"><span><i style="background:conic-gradient(#e86 0 25%,#6ae 0 50%,#fd5 0 75%,#8c6 0)"></i>My own theme</span></label>
+        </div>
+      </fieldset>
+      <div class="row">
+        <label class="field">DATE<input type="date" id="d"></label>
+        <label class="field">GUESTS<input id="g" inputmode="numeric" placeholder="e.g. 30"></label>
+      </div>
+      <div class="row">
+        <label class="field">WORDS ON TOP<input id="w" placeholder="e.g. Congrats Grad"></label>
+        <label class="field">YOUR NAME<input id="n" autocomplete="given-name" placeholder="First name"></label>
+      </div>
+      <label class="field">ANYTHING ELSE<textarea id="x" placeholder="Theme, colours, flavour…"></textarea></label>
+      <div class="out" aria-live="polite"><b>YOUR MESSAGE TO NDALO</b><span id="msg"></span></div>
+      <button class="btn" type="submit">Send on WhatsApp</button>
+      <p class="small">Demo: in the live version this also lands in Ndalo's inbox, and you get a reminder before your cake is ready.</p>
+    </form>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap">
+    <div>
+      <div class="label">FIND US</div>
+      <h2>Creative Bakes by Ndalo</h2>
+      <dl>
+        <dt>WHERE</dt><dd>Bophelong, Vanderbijlpark</dd>
+        <dt>ORDERS</dt><dd>Collection or delivery</dd>
+        <dt>WHATSAPP</dt><dd><a href="https://wa.me/27791875566" target="_blank" rel="noopener">079 187 5566</a></dd>
+        <dt>INSTAGRAM</dt><dd><a href="https://www.instagram.com/creativebakesbyndalo" target="_blank" rel="noopener">@creativebakesbyndalo</a></dd>
+        <dt>FACEBOOK</dt><dd><a href="https://www.facebook.com/creativebakesbyndalo" target="_blank" rel="noopener">Creative Bakes by Ndalo</a></dd>
+      </dl>
+      <a class="btn" href="https://wa.me/27791875566" target="_blank" rel="noopener">WhatsApp Ndalo</a>
+    </div>
+    <div class="ph">
+      <img src="img/congrats-papa.jpg" alt="Graduation cake with gold lettering" loading="lazy">
+      <img src="img/shes-a-graduate.jpg" alt="Black and white graduation cake" loading="lazy">
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap"><span>© Creative Bakes by Ndalo · Bophelong, Vanderbijlpark</span><span>Demo by <a href="https://hellozara.solutions">Hello Zara</a></span></div></footer>
+
+<button class="zara-btn" id="zo" aria-expanded="false" aria-controls="chat"><i>Z</i><span>Ask Zara</span></button>
+<div class="chat" id="chat" role="dialog" aria-label="Chat with Zara">
+  <div class="chat-top"><div><b>Zara · Creative Bakes</b><small>Ndalo's assistant (demo)</small></div><button id="zc" aria-label="Close chat">×</button></div>
+  <div class="log" id="log" aria-live="polite"></div>
+  <div class="quick" id="quick">
+    <button data-q="order">Order a cake</button>
+    <button data-q="where">Where are you?</button>
+    <button data-q="deliver">Do you deliver?</button>
+    <button data-q="price">How much?</button>
+  </div>
+  <form class="ask" id="ask"><input id="ai" placeholder="Type a question…" aria-label="Your question"><button>Send</button></form>
+  <div class="chat-note">Demo chat by Hello Zara</div>
+</div>
+
+<script>
+const WA='27791875566',$=s=>document.querySelector(s);
+function build(){
+  const occ=document.querySelector('input[name=occ]:checked').value, st=document.querySelector('input[name=style]:checked').value;
+  const d=$('#d').value,g=$('#g').value.trim(),w=$('#w').value.trim(),n=$('#n').value.trim(),x=$('#x').value.trim();
+  let date='';if(d)date=new Date(d+'T12:00').toLocaleDateString('en-ZA',{weekday:'long',day:'numeric',month:'long'});
+  const L=[`Hi Ndalo${n?', this is '+n:''}! I'd love a cake for a ${occ.toLowerCase()}.`,`Style: ${st}`];
+  if(date)L.push(`Date: ${date}`);if(g)L.push(`Guests: about ${g}`);if(w)L.push(`Words on top: "${w}"`);if(x)L.push(`Also: ${x}`);
+  return L.join('\n');
+}
+const upd=()=>$('#msg').textContent=build();
+$('#f').addEventListener('input',upd);
+$('#f').addEventListener('submit',e=>{e.preventDefault();window.open('https://wa.me/'+WA+'?text='+encodeURIComponent(build()),'_blank','noopener');});
+upd();
+
+const log=$('#log'),chat=$('#chat');let step=null,o={};
+function say(t,w='z'){const m=document.createElement('div');m.className='msg '+w;m.textContent=t;log.appendChild(m);log.scrollTop=log.scrollHeight;}
+function open(){chat.classList.add('open');$('#zo').setAttribute('aria-expanded','true');if(!log.children.length)say("Hi! I'm Zara, Ndalo's assistant at Creative Bakes. I can start a cake order for you or answer a quick question.");$('#ai').focus();}
+function close(){chat.classList.remove('open');$('#zo').setAttribute('aria-expanded','false');}
+$('#zo').onclick=()=>chat.classList.contains('open')?close():open();$('#zc').onclick=close;
+const A={
+  where:"Creative Bakes by Ndalo is in Bophelong, Vanderbijlpark.",
+  deliver:"Yes, you can collect your order or have it delivered. Ndalo will confirm the details when you order.",
+  price:"Every cake is designed for you, so Ndalo quotes per design. Tell me what you have in mind and I'll make sure she sees it."
+};
+function startO(){step='occ';o={};say("Lovely! What's the occasion?");}
+function flow(t){
+  if(step==='occ'){o.occ=t;step='date';return say("When do you need it?");}
+  if(step==='date'){o.date=t;step='guests';return say("About how many guests?");}
+  if(step==='guests'){o.guests=t;step='name';return say("And your name?");}
+  if(step==='name'){step=null;say(`Thank you, ${t.replace(/^./,c=>c.toUpperCase())}! I've noted: ${o.occ}, ${o.date}, about ${o.guests} guests.`);
+    return say("In the live version Ndalo gets this straight away and comes back to you with a design and quote.");}
+}
+function answer(t){const q=t.toLowerCase();
+  if(step)return flow(t);
+  if(/order|cake for|book/.test(q))return startO();
+  if(/deliver/.test(q))return say(A.deliver);
+  if(/where|address|located|collect/.test(q))return say(A.where);
+  if(/price|cost|how much|r\d/.test(q))return say(A.price);
+  say("Good question! I'll make sure Ndalo sees it. You can also WhatsApp her on 079 187 5566.");}
+$('#quick').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;say(b.textContent,'u');step=null;b.dataset.q==='order'?startO():say(A[b.dataset.q]);});
+$('#ask').addEventListener('submit',e=>{e.preventDefault();const v=$('#ai').value.trim();if(!v)return;say(v,'u');$('#ai').value='';setTimeout(()=>answer(v),350);});
+</script>
+</body>
+</html>
