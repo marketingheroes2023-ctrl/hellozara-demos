@@ -4,247 +4,373 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
-<title>YogiSam · Good Vibrations Studio · Vanderbijlpark</title>
-<meta name="description" content="Yoga, Pilates and Circuit Fit classes in Vanderbijlpark with Sam. Evening classes at the Old Vaaltonians Club and online morning classes. All levels welcome.">
+<title>Good Vibrations Studio by YogiSam, Vanderbijlpark</title>
+<meta name="description" content="Mindful movement for every body. Yoga, Pilates and Circuit Fit with Samantha in Vanderbijlpark: evenings at the Old Vaaltonians Club, live online mornings, and Pilates for Seniors at The Palms.">
+<meta property="og:title" content="Good Vibrations Studio by YogiSam">
+<meta property="og:image" content="https://demo.hellozara.solutions/yogisam/img/sam-cover.jpg">
+<meta property="og:url" content="https://demo.hellozara.solutions/yogisam/">
+<link rel="icon" href="img/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Allura&family=Figtree:wght@400;500;600;700&family=Marcellus&display=swap" rel="stylesheet">
 <style>
-:root{--cream:#faf5ef;--sand:#f1e6da;--clay:#c97b63;--clay-d:#a8604a;--sage:#7d9479;--sage-l:#e3eadf;--ink:#3b3330;--muted:#7a6e68}
+:root{
+ --linen:#f2eadf; --linen-2:#e9dece; --paper:#fbf8f3;
+ --brick:#a64b42; --brick-d:#8a3b33;
+ --sage:#5e7356; --sage-l:#dfe5d7;
+ --gold:#a98140; --gold-l:#efe2c8;
+ --plum:#3f2638; --ink:#2b2420; --muted:#6f625a;
+}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;background:var(--cream);color:var(--ink);font-family:"Nunito Sans",system-ui,sans-serif;font-size:17px;line-height:1.6}
-h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600;line-height:1.15;margin:0 0 .4em}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.65 "Figtree",system-ui,sans-serif}
+img{max-width:100%;display:block}
+h1,h2,h3{font-family:"Marcellus",Georgia,serif;font-weight:400;line-height:1.15;margin:0}
 a{color:inherit}
-.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
-.demo-bar{background:var(--ink);color:#fff;font-size:13px;text-align:center;padding:7px 16px}
-.demo-bar a{color:#f3c9b8}
-nav{display:flex;justify-content:space-between;align-items:center;padding:18px 0}
-.logo{font-family:"Cormorant Garamond",serif;font-size:26px;font-weight:600;text-decoration:none}
-.logo span{color:var(--clay)}
-.nav-links{display:flex;gap:22px;font-size:15px}
-.nav-links a{text-decoration:none;color:var(--muted)}
-.btn{display:inline-block;background:var(--clay);color:#fff;text-decoration:none;padding:13px 24px;border-radius:40px;font-weight:700;font-size:15px;border:0;cursor:pointer}
-.btn:hover{background:var(--clay-d)}
-.btn.ghost{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
-.hero{position:relative;padding:60px 0 80px;overflow:hidden}
-.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
-.eyebrow{text-transform:uppercase;letter-spacing:.18em;font-size:13px;color:var(--sage);font-weight:700}
-.hero h1{font-size:clamp(42px,6vw,68px)}
-.hero h1 em{color:var(--clay);font-style:italic}
-.hero p.lead{font-size:19px;color:var(--muted);max-width:30em}
-.hero .ctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
-.sun{aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 50% 60%,#f3c9b8 0 38%,#efd9c9 39% 55%,var(--sand) 56%);display:grid;place-items:center;position:relative}
-.sun svg{width:62%;height:auto}
-.photo-note{position:absolute;bottom:6%;left:50%;transform:translateX(-50%);background:#fff;font-size:12px;color:var(--muted);padding:6px 12px;border-radius:20px;white-space:nowrap;box-shadow:0 2px 8px rgba(0,0,0,.06)}
-.pills{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
-.pill{background:var(--sage-l);color:#4f6650;padding:6px 14px;border-radius:30px;font-size:14px;font-weight:600}
-section{padding:70px 0}
-.alt{background:var(--sand)}
-.section-head{text-align:center;max-width:640px;margin:0 auto 40px}
-.section-head h2{font-size:clamp(34px,4.4vw,46px)}
-.section-head p{color:var(--muted)}
-.tt{display:grid;grid-template-columns:1fr 1fr;gap:24px}
-.tt-card{background:#fff;border-radius:18px;padding:28px;box-shadow:0 4px 20px rgba(80,50,30,.06)}
-.tt-card h3{font-size:28px;display:flex;align-items:center;gap:10px}
-.tt-card .where{color:var(--muted);font-size:15px;margin:-4px 0 14px}
-.row{display:grid;grid-template-columns:110px 120px 1fr;gap:8px;padding:11px 0;border-top:1px solid #f0e6dc;font-size:16px}
-.row:first-of-type{border-top:0}
-.row .d{font-weight:700}
-.row .t{color:var(--muted)}
-.row .c{color:var(--clay-d);font-weight:600}
-.warm{background:var(--sage-l);border-radius:12px;padding:10px 14px;font-size:15px;margin-bottom:10px}
-.svc{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.svc-card{background:#fff;border-radius:18px;padding:26px}
-.svc-card .ico{width:44px;height:44px;border-radius:50%;background:var(--sage-l);display:grid;place-items:center;margin-bottom:12px;font-size:22px}
-.svc-card h3{font-size:24px}
-.svc-card p{margin:0;color:var(--muted);font-size:15.5px}
-.quote{text-align:center;max-width:720px;margin:0 auto}
-.quote blockquote{font-family:"Cormorant Garamond",serif;font-size:clamp(26px,3.4vw,36px);font-style:italic;margin:0 0 14px;line-height:1.3}
-.stars{color:var(--clay);letter-spacing:4px;font-size:20px}
-.quote .src{color:var(--muted);font-size:15px}
-.contact{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}
-.contact ul{list-style:none;padding:0;margin:18px 0 0}
-.contact li{padding:8px 0;border-bottom:1px solid #eadccd}
-.contact li b{display:inline-block;width:100px}
-footer{background:var(--ink);color:#d9cfc9;padding:28px 0;font-size:14px;text-align:center}
-footer a{color:#f3c9b8}
-/* chat */
-.chat-btn{position:fixed;right:20px;bottom:20px;background:var(--sage);color:#fff;border:0;border-radius:40px;padding:14px 20px;font:700 15px "Nunito Sans",sans-serif;box-shadow:0 8px 24px rgba(0,0,0,.18);cursor:pointer;z-index:20;display:flex;align-items:center;gap:8px}
-.chat{position:fixed;right:20px;bottom:84px;width:min(370px,calc(100vw - 32px));height:min(520px,calc(100vh - 120px));background:#fff;border-radius:20px;box-shadow:0 16px 48px rgba(0,0,0,.2);display:none;flex-direction:column;overflow:hidden;z-index:21}
-.chat.open{display:flex}
-.chat-h{background:var(--sage);color:#fff;padding:14px 16px}
-.chat-h b{display:block;font-size:16px}
-.chat-h small{opacity:.85}
-.msgs{flex:1;overflow-y:auto;padding:14px;display:flex;flex-direction:column;gap:8px;background:#fbf9f6}
-.m{max-width:85%;padding:9px 13px;border-radius:16px;font-size:15px;line-height:1.45;white-space:pre-line}
-.m.bot{background:#fff;border:1px solid #eee5dc;align-self:flex-start;border-bottom-left-radius:4px}
-.m.me{background:var(--clay);color:#fff;align-self:flex-end;border-bottom-right-radius:4px}
-.quick{display:flex;gap:6px;flex-wrap:wrap;padding:8px 12px 0;background:#fbf9f6}
-.quick button{border:1px solid var(--sage);background:#fff;color:#4f6650;border-radius:20px;padding:5px 11px;font-size:13px;cursor:pointer}
-.chat form{display:flex;gap:8px;padding:10px;border-top:1px solid #eee}
-.chat input{flex:1;border:1px solid #ddd;border-radius:20px;padding:10px 14px;font:15px "Nunito Sans",sans-serif}
-.chat form button{background:var(--clay);color:#fff;border:0;border-radius:20px;padding:0 16px;font-weight:700;cursor:pointer}
-.chat .note{font-size:11px;color:var(--muted);text-align:center;padding:0 10px 8px}
-@media (max-width:820px){
- .hero-grid,.tt,.contact{grid-template-columns:1fr}
- .svc{grid-template-columns:1fr}
- .nav-links{display:none}
- .sun{max-width:340px;margin:0 auto;width:100%}
- .row{grid-template-columns:90px 105px 1fr;font-size:15px}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+
+/* demo note */
+.demo-note{background:var(--plum);color:#eadbe4;font-size:13.5px;text-align:center;padding:8px 16px}
+.demo-note a{color:#fff}
+
+/* header */
+.top{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px 0}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand img{width:52px;height:52px;border-radius:50%}
+.brand b{display:block;font:400 21px/1.1 "Marcellus",serif;letter-spacing:.02em}
+.brand small{color:var(--muted);font-size:14px}
+.menu{display:flex;gap:26px;font-size:15.5px}
+.menu a{text-decoration:none;color:var(--muted)}
+.menu a:hover{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--brick);color:#fff;text-decoration:none;padding:12px 22px;border-radius:999px;font-weight:600;font-size:15.5px;border:0;cursor:pointer}
+.btn:hover{background:var(--brick-d)}
+.btn.line{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1.5px var(--ink)}
+.btn.line:hover{background:var(--ink);color:#fff}
+.btn svg{width:18px;height:18px}
+
+/* hero: Sam's own cover */
+.hero{background:linear-gradient(var(--linen),var(--paper))}
+.cover{border-radius:6px;overflow:hidden;box-shadow:0 30px 60px -30px rgba(63,38,56,.45)}
+.cover img{width:100%;aspect-ratio:1568/567;object-fit:cover}
+.hero-text{display:grid;grid-template-columns:1.3fr 1fr;gap:40px;align-items:end;padding:44px 0 64px}
+.hero-text h1{font-size:clamp(34px,4.6vw,54px)}
+.script{font-family:"Allura",cursive;color:var(--gold);font-size:1.25em;line-height:1}
+.hero-text p{color:var(--muted);font-size:18.5px;max-width:34em;margin:16px 0 0}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;justify-content:flex-end}
+
+/* week board */
+.week{padding:72px 0;background:var(--paper)}
+.head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:28px}
+.head h2{font-size:clamp(32px,3.8vw,44px)}
+.head p{color:var(--muted);margin:8px 0 0;max-width:36em}
+.legend{display:flex;gap:16px;flex-wrap:wrap;font-size:14.5px;color:var(--muted)}
+.legend span{display:inline-flex;align-items:center;gap:7px}
+.legend i{width:12px;height:12px;border-radius:3px;display:inline-block}
+.board{display:grid;grid-template-columns:repeat(5,1fr);border-top:2px solid var(--ink)}
+.day{padding:14px 12px 18px;border-right:1px solid var(--linen-2)}
+.day:last-child{border-right:0}
+.day h3{font-size:20px;margin-bottom:12px}
+.s{border-radius:8px;padding:10px 12px;margin-bottom:10px;font-size:15px;line-height:1.35}
+.s time{display:block;font-weight:700;font-size:13.5px;margin-bottom:2px}
+.s.on{background:var(--sage-l);border-left:4px solid var(--sage)}
+.s.club{background:#f3dfda;border-left:4px solid var(--brick)}
+.s.palms{background:var(--gold-l);border-left:4px solid var(--gold)}
+.s.warm{background:transparent;border:1px dashed #c9b9a6;font-size:13.5px;color:var(--muted)}
+.board-note{color:var(--muted);font-size:15px;margin-top:14px}
+i.on{background:var(--sage)} i.club{background:var(--brick)} i.palms{background:var(--gold)}
+
+/* places */
+.places{background:var(--linen);padding:80px 0}
+.hall{display:grid;grid-template-columns:1.25fr 1fr;gap:44px;align-items:center}
+.hall figure{margin:0}
+.hall img{border-radius:6px;aspect-ratio:1290/680;object-fit:cover}
+.hall figcaption{font-size:14px;color:var(--muted);margin-top:8px}
+.hall h2{font-size:clamp(30px,3.4vw,40px);margin-bottom:12px}
+.hall p{color:var(--muted);margin:0 0 14px}
+.tag{display:inline-block;font-size:14px;font-weight:600;padding:4px 12px;border-radius:999px;margin-bottom:14px}
+.tag.club{background:#f3dfda;color:var(--brick-d)}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:56px}
+.place{background:var(--paper);border-radius:6px;padding:30px}
+.place h3{font-size:28px;margin-bottom:10px}
+.place p{color:var(--muted);margin:0 0 12px}
+.tag.on{background:var(--sage-l);color:#435339}
+.tag.palms{background:var(--gold-l);color:#7d5f2d}
+.price{display:flex;gap:28px;margin:18px 0 6px}
+.price div{font-size:14px;color:var(--muted)}
+.price b{display:block;font:400 34px/1 "Marcellus",serif;color:var(--ink)}
+.need{font-size:15px;color:var(--muted);border-top:1px solid var(--linen-2);padding-top:12px;margin-top:14px}
+
+/* also */
+.also{padding:80px 0}
+.also-grid{display:grid;grid-template-columns:1fr 1.4fr;gap:48px}
+.also h2{font-size:clamp(30px,3.4vw,40px)}
+.also .lede{color:var(--muted);margin-top:12px}
+.list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:0 36px}
+.list li{padding:16px 0;border-bottom:1px solid var(--linen-2)}
+.list b{display:block;font:400 21px/1.3 "Marcellus",serif}
+.list span{color:var(--muted);font-size:15.5px}
+
+/* quote */
+.voice{background:var(--plum);color:#f4e9ef;padding:84px 0;text-align:center}
+.voice blockquote{margin:0 auto;max-width:22em;font:400 clamp(26px,3.2vw,36px)/1.35 "Marcellus",serif}
+.voice p{color:#cdb6c5;margin:18px 0 0;font-size:15px}
+.stars{color:var(--gold);letter-spacing:6px;margin-bottom:18px}
+
+/* contact */
+.contact{padding:84px 0 96px}
+.contact-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:48px;align-items:center}
+.contact h2{font-size:clamp(34px,4vw,50px)}
+.contact .script{display:block;font-size:38px;margin-top:10px}
+.contact p{color:var(--muted);max-width:30em}
+.facts{margin:0;display:grid;grid-template-columns:auto 1fr;gap:12px 22px;font-size:16.5px}
+.facts dt{color:var(--muted)}
+.facts dd{margin:0}
+footer{border-top:1px solid var(--linen-2);padding:26px 0;color:var(--muted);font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+
+/* Zara chat */
+.zbtn{position:fixed;right:20px;bottom:20px;z-index:30;display:flex;align-items:center;gap:10px;background:var(--plum);color:#fff;border:0;border-radius:999px;padding:12px 20px 12px 12px;font:600 15px "Figtree",sans-serif;box-shadow:0 12px 30px rgba(63,38,56,.35);cursor:pointer}
+.zbtn .dot{width:34px;height:34px;border-radius:50%;background:var(--gold);display:grid;place-items:center;font:400 18px "Marcellus",serif;color:var(--plum)}
+.zchat{position:fixed;right:20px;bottom:86px;z-index:31;width:min(380px,calc(100vw - 32px));height:min(540px,calc(100vh - 120px));background:#fff;border-radius:18px;box-shadow:0 24px 60px rgba(43,36,32,.28);display:none;flex-direction:column;overflow:hidden}
+.zchat.open{display:flex}
+.zh{display:flex;align-items:center;gap:12px;padding:14px 16px;background:var(--plum);color:#fff}
+.zh .dot{width:38px;height:38px;border-radius:50%;background:var(--gold);display:grid;place-items:center;font:400 20px "Marcellus",serif;color:var(--plum);flex:none}
+.zh b{display:block;font-size:15.5px}
+.zh small{color:#d9c6d2;font-size:13px}
+.zh button{margin-left:auto;background:none;border:0;color:#fff;font-size:22px;cursor:pointer;line-height:1}
+.zm{flex:1;overflow-y:auto;padding:16px;display:flex;flex-direction:column;gap:8px;background:var(--paper)}
+.m{max-width:86%;padding:10px 13px;border-radius:14px;font-size:15px;line-height:1.45;white-space:pre-line}
+.m.bot{background:#fff;border:1px solid var(--linen-2);align-self:flex-start;border-bottom-left-radius:4px}
+.m.me{background:var(--brick);color:#fff;align-self:flex-end;border-bottom-right-radius:4px}
+.zq{display:flex;gap:6px;flex-wrap:wrap;padding:10px 12px 0;background:var(--paper)}
+.zq button{border:1px solid #cdbfae;background:#fff;color:var(--ink);border-radius:999px;padding:6px 12px;font:500 13.5px "Figtree",sans-serif;cursor:pointer}
+.zq button:hover{border-color:var(--brick);color:var(--brick)}
+.zf{display:flex;gap:8px;padding:10px 12px;background:var(--paper)}
+.zf input{flex:1;border:1px solid #d9ccbc;border-radius:999px;padding:11px 15px;font:15px "Figtree",sans-serif;background:#fff}
+.zf button{background:var(--brick);color:#fff;border:0;border-radius:999px;padding:0 18px;font-weight:600;cursor:pointer}
+.znote{font-size:11.5px;color:var(--muted);text-align:center;padding:2px 12px 10px;background:var(--paper)}
+
+@media (max-width:900px){
+ .menu{display:none}
+ .hero-text,.hall,.pair,.also-grid,.contact-grid{grid-template-columns:1fr}
+ .hero-cta{justify-content:flex-start}
+ .board{grid-template-columns:1fr;border-top:0}
+ .day{border-right:0;border-top:2px solid var(--ink);display:grid;grid-template-columns:110px 1fr;gap:12px;padding:14px 0}
+ .day h3{margin:4px 0 0}
+ .list{grid-template-columns:1fr}
+}
+@media (max-width:520px){
+ .top .btn{padding:10px 16px;font-size:14.5px}
+ .brand small{display:none}
+ .cover img{aspect-ratio:4/3;object-position:62% 50%}
+ .day{grid-template-columns:1fr}
 }
 </style>
 </head>
 <body>
-<div class="demo-bar">A demo built for YogiSam by <a href="https://hellozara.solutions">Hello Zara</a> — your own photos and details go in before anything goes live.</div>
 
-<header class="wrap">
- <nav>
-  <a class="logo" href="#">Yogi<span>Sam</span></a>
-  <div class="nav-links"><a href="#classes">Timetable</a><a href="#offer">Classes</a><a href="#contact">Contact</a></div>
-  <a class="btn" href="https://wa.me/27604392100?text=Hi%20Sam%2C%20I%27d%20like%20to%20book%20a%20class" target="_blank" rel="noopener">Book a class</a>
+<div class="demo-note">A website Hello Zara designed as a demo for Samantha. Nothing here is live until she says so. <a href="https://hellozara.solutions">hellozara.solutions</a></div>
+
+<header class="wrap top">
+ <a class="brand" href="#" aria-label="Good Vibrations Studio home">
+  <img src="img/logo.png" alt="Good Vibrations Studio logo">
+  <span><b>Good Vibrations Studio</b><small>presented by YogiSam</small></span>
+ </a>
+ <nav class="menu" aria-label="Main">
+  <a href="#week">Timetable</a><a href="#places">Where we move</a><a href="#also">Also with Sam</a><a href="#contact">Contact</a>
  </nav>
+ <a class="btn" href="https://wa.me/27604392100?text=Hi%20Sam%2C%20I%27d%20like%20to%20book%20a%20class" target="_blank" rel="noopener">Book a class</a>
 </header>
 
 <main>
 <section class="hero">
- <div class="wrap hero-grid">
+ <div class="wrap">
+  <div class="cover"><img src="img/sam-cover.jpg" alt="Samantha in a low lunge on a purple mat. Yoga, Pilates, Healing, Teacher Training, Retreats, Rhythm. Mindful movement for every body."></div>
+  <div class="hero-text">
+   <div>
+    <h1>Mindful movement for every body</h1>
+    <p>Yoga, Pilates and Circuit Fit with Samantha in Vanderbijlpark. Come to the big hall at the Old Vaaltonians Club in the evening, or join live from your own lounge in the morning. All levels welcome.</p>
+   </div>
+   <div class="hero-cta">
+    <a class="btn" href="https://wa.me/27604392100?text=Hi%20Sam%2C%20I%27d%20like%20to%20book%20a%20class" target="_blank" rel="noopener">
+     <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1-.7-.3-1.4-.7-2-1.3-.5-.5-1-1.1-1.3-1.7-.1-.2 0-.4.1-.5l.4-.5.3-.4v-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.3s1 2.7 1.2 2.9c.1.2 2 3.1 4.9 4.3 1.8.8 2.5.8 3.4.7.6-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>
+     WhatsApp Sam
+    </a>
+    <a class="btn line" href="#week">See this week</a>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="week" id="week">
+ <div class="wrap">
+  <div class="head">
+   <div>
+    <h2>Your week with Sam</h2>
+    <p>Pick the times that fit your life. Every class welcomes beginners.</p>
+   </div>
+   <div class="legend" aria-label="Key">
+    <span><i class="club"></i>Old Vaaltonians Club</span>
+    <span><i class="on"></i>Live online</span>
+    <span><i class="palms"></i>Seniors at The Palms</span>
+   </div>
+  </div>
+  <div class="board">
+   <div class="day"><h3>Monday</h3><div>
+    <div class="s on"><time>07:00 – 07:45</time>Pilates</div>
+    <div class="s palms"><time>09:45 – 10:30</time>Pilates for Seniors</div>
+    <div class="s warm">17:00 Circuit Fit warm-up</div>
+    <div class="s club"><time>17:15 – 18:15</time>Pilates</div>
+   </div></div>
+   <div class="day"><h3>Tuesday</h3><div>
+    <div class="s warm">17:00 Circuit Fit warm-up</div>
+    <div class="s club"><time>17:15 – 18:15</time>Yoga</div>
+   </div></div>
+   <div class="day"><h3>Wednesday</h3><div>
+    <div class="s on"><time>06:00 – 07:00</time>Yoga Vinyasa</div>
+    <div class="s palms"><time>09:45 – 10:30</time>Pilates for Seniors</div>
+    <div class="s warm">17:00 Circuit Fit warm-up</div>
+    <div class="s club"><time>17:15 – 18:15</time>Circuit Fit or Pilates, alternating weeks</div>
+   </div></div>
+   <div class="day"><h3>Thursday</h3><div>
+    <div class="s warm">17:00 Circuit Fit warm-up</div>
+    <div class="s club"><time>17:15 – 18:15</time>Yoga</div>
+   </div></div>
+   <div class="day"><h3>Friday</h3><div>
+    <div class="s on"><time>06:15 – 07:00</time>Sunrise Yoga Flow</div>
+   </div></div>
+  </div>
+  <p class="board-note">Not sure which class to start with? Ask Zara in the chat, any time of day or night.</p>
+ </div>
+</section>
+
+<section class="places" id="places">
+ <div class="wrap">
+  <div class="hall">
+   <figure>
+    <img src="img/club-hall.jpg" alt="Sam's evening class stretching in the big hall at the Old Vaaltonians Club, with the sports fields outside the glass doors" loading="lazy">
+    <figcaption>An evening class at the Old Vaaltonians Club</figcaption>
+   </figure>
+   <div>
+    <span class="tag club">Evenings, Monday to Thursday</span>
+    <h2>A beautiful big hall with room to move</h2>
+    <p>Evening classes run at the Old Vaaltonians Club, with plenty of space to spread out. Each evening starts with a 15-minute Circuit Fit warm-up at 17:00, then an hour of Pilates, Yoga or Circuit Fit.</p>
+    <p>Bring your mat and a water bottle. Sam has spare mats if you forget.</p>
+   </div>
+  </div>
+
+  <div class="pair">
+   <div class="place">
+    <span class="tag on">Mornings, Monday, Wednesday, Friday</span>
+    <h3>Live online, from home</h3>
+    <p>No rushing and no travelling. Roll out your mat, open your laptop and move with Sam in real time. Live instruction and guidance, suitable for all fitness levels.</p>
+    <p class="need">All you need is a yoga mat, a small space and an internet connection.</p>
+   </div>
+   <div class="place">
+    <span class="tag palms">Mondays and Wednesdays, 09:45 – 10:30</span>
+    <h3>Pilates for Seniors</h3>
+    <p>Mat Pilates designed for seniors, to move with ease, feel stronger and steadier, and keep doing what you love. A small, friendly group in the Activity Room at The Palms Aftree-oord.</p>
+    <div class="price">
+     <div><b>R400</b>a month, two classes a week</div>
+     <div><b>R50</b>trial class</div>
+    </div>
+    <p class="need">Payment is due at the start of each month and keeps your place reserved. Trial classes depend on space.</p>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="also" id="also">
+ <div class="wrap also-grid">
   <div>
-   <div class="eyebrow">Good Vibrations Studio · Vanderbijlpark</div>
-   <h1>Move. Breathe.<br><em>Feel good.</em></h1>
-   <p class="lead">Yoga, Pilates and Circuit Fit with Sam — in a big, beautiful hall at the Old Vaaltonians Club, or online from your own lounge.</p>
-   <div class="pills"><span class="pill">All levels welcome</span><span class="pill">Evening classes</span><span class="pill">Online mornings</span></div>
-   <div class="ctas">
-    <a class="btn" href="https://wa.me/27604392100?text=Hi%20Sam%2C%20I%27d%20like%20to%20book%20a%20class" target="_blank" rel="noopener">WhatsApp Sam to book</a>
-    <a class="btn ghost" href="#classes">See the timetable</a>
-   </div>
+   <h2>Also with Sam</h2>
+   <p class="lede">Good Vibrations Studio is more than a mat class. Ask Sam about times and dates for these.</p>
   </div>
-  <div class="sun" aria-hidden="true">
-   <svg viewBox="0 0 200 200" fill="none" stroke="#a8604a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-    <circle cx="100" cy="52" r="13"/>
-    <path d="M100 66 L100 118"/>
-    <path d="M100 82 L62 58 M100 82 L138 58"/>
-    <path d="M100 118 L72 150 L100 150 M100 118 L128 150 L100 150"/>
-    <path d="M40 168 Q100 156 160 168" stroke="#7d9479"/>
-   </svg>
-   <div class="photo-note">Sam's own class photo goes here</div>
-  </div>
+  <ul class="list">
+   <li><b>Yoga Teacher Training</b><span>For when you want to teach yoga yourself.</span></li>
+   <li><b>Pregnancy Yoga</b><span>Gentle movement for moms-to-be.</span></li>
+   <li><b>Kids Yoga</b><span>Yoga made playful for little ones.</span></li>
+   <li><b>Tap classes</b><span>Rhythm, and a lot of fun.</span></li>
+   <li><b>Healing</b><span>Sam's holistic sessions alongside movement.</span></li>
+   <li><b>Retreats</b><span>Time away to reset. Ask Sam about the next one.</span></li>
+  </ul>
  </div>
 </section>
 
-<section id="classes" class="alt">
+<section class="voice">
  <div class="wrap">
-  <div class="section-head">
-   <h2>This week's timetable</h2>
-   <p>Every class welcomes all levels. Not sure where to start? Ask Zara in the chat, or WhatsApp Sam.</p>
-  </div>
-  <div class="tt">
-   <div class="tt-card">
-    <h3>🌙 Evening classes</h3>
-    <div class="where">At the Old Vaaltonians Club, Vanderbijlpark</div>
-    <div class="warm">17:00 – 17:15 · Circuit Fit warm-up, every evening</div>
-    <div class="row"><span class="d">Monday</span><span class="t">17:15 – 18:15</span><span class="c">Pilates</span></div>
-    <div class="row"><span class="d">Tuesday</span><span class="t">17:15 – 18:15</span><span class="c">Yoga</span></div>
-    <div class="row"><span class="d">Wednesday</span><span class="t">17:15 – 18:15</span><span class="c">Circuit Fit / Pilates (alternating)</span></div>
-    <div class="row"><span class="d">Thursday</span><span class="t">17:15 – 18:15</span><span class="c">Yoga</span></div>
-   </div>
-   <div class="tt-card">
-    <h3>☀️ Morning classes</h3>
-    <div class="where">Online only — join from home</div>
-    <div class="row"><span class="d">Monday</span><span class="t">07:00 – 07:45</span><span class="c">Pilates</span></div>
-    <div class="row"><span class="d">Wednesday</span><span class="t">06:00 – 07:00</span><span class="c">Yoga Vinyasa</span></div>
-    <div class="row"><span class="d">Friday</span><span class="t">06:15 – 07:00</span><span class="c">Sunrise Yoga Flow</span></div>
-   </div>
-  </div>
- </div>
-</section>
-
-<section id="offer">
- <div class="wrap">
-  <div class="section-head">
-   <h2>More than a mat class</h2>
-   <p>Build strength, improve flexibility, reduce stress and feel more balanced.</p>
-  </div>
-  <div class="svc">
-   <div class="svc-card"><div class="ico">🧘‍♀️</div><h3>Yoga &amp; Pilates</h3><p>Mat classes in the evening at the club, and online in the mornings.</p></div>
-   <div class="svc-card"><div class="ico">🎓</div><h3>Yoga Teacher Training</h3><p>Want to teach yoga yourself? Ask Sam about her teacher training.</p></div>
-   <div class="svc-card"><div class="ico">🤰</div><h3>Pregnancy Yoga</h3><p>Gentle classes for moms-to-be.</p></div>
-   <div class="svc-card"><div class="ico">🌈</div><h3>Kids Yoga</h3><p>Yoga made fun for little ones.</p></div>
-   <div class="svc-card"><div class="ico">👞</div><h3>Tap Classes</h3><p>Yes, tap! Ask Sam for times.</p></div>
-   <div class="svc-card"><div class="ico">💪</div><h3>Circuit Fit</h3><p>A 15-minute warm-up before every evening class, plus alternate Wednesdays.</p></div>
-  </div>
- </div>
-</section>
-
-<section class="alt">
- <div class="wrap quote">
-  <div class="stars">★★★★★</div>
+  <div class="stars" aria-label="Five stars">★★★★★</div>
   <blockquote>“Sam is a talented teacher who brings creativity, thoughtfulness and genuine expertise.”</blockquote>
-  <div class="src">Google review · YogiSam is rated 5.0 on Google</div>
+  <p>From a Google review. YogiSam is rated 5.0 on Google.</p>
  </div>
 </section>
 
-<section id="contact">
- <div class="wrap contact">
+<section class="contact" id="contact">
+ <div class="wrap contact-grid">
   <div>
-   <h2 style="font-size:42px">Come move with us</h2>
-   <p style="color:var(--muted)">The easiest way to book is a WhatsApp to Sam. Or ask Zara in the chat any time, day or night.</p>
+   <h2>Come move with us <span class="script">I look forward to moving with you</span></h2>
+   <p>The quickest way to book is a WhatsApp to Sam. Or ask Zara in the chat, and Sam will get your message.</p>
    <a class="btn" href="https://wa.me/27604392100?text=Hi%20Sam%2C%20I%27d%20like%20to%20book%20a%20class" target="_blank" rel="noopener">WhatsApp Sam</a>
   </div>
-  <ul>
-   <li><b>WhatsApp</b> +27 60 439 2100</li>
-   <li><b>Email</b> yogisam20@yahoo.com</li>
-   <li><b>Evenings</b> Old Vaaltonians Club, Vanderbijlpark</li>
-   <li><b>Mornings</b> Online</li>
-  </ul>
+  <dl class="facts">
+   <dt>WhatsApp</dt><dd>+27 60 439 2100</dd>
+   <dt>Email</dt><dd><a href="mailto:yogisam20@yahoo.com">yogisam20@yahoo.com</a></dd>
+   <dt>Evenings</dt><dd>Old Vaaltonians Club, Vanderbijlpark</dd>
+   <dt>Seniors</dt><dd>The Palms Aftree-oord, Activity Room</dd>
+   <dt>Mornings</dt><dd>Live online</dd>
+  </dl>
  </div>
 </section>
 </main>
 
-<footer>YogiSam · Good Vibrations Studio · Vanderbijlpark<br>Demo website and Zara assistant by <a href="https://hellozara.solutions">Hello Zara</a></footer>
+<footer><div class="wrap"><span>Good Vibrations Studio, presented by YogiSam, Vanderbijlpark</span><span>Website and Zara assistant by <a href="https://hellozara.solutions">Hello Zara</a></span></div></footer>
 
-<button class="chat-btn" id="chatBtn" aria-expanded="false">💬 Ask Zara</button>
-<div class="chat" id="chat" role="dialog" aria-label="Chat with Zara">
- <div class="chat-h"><b>Zara · YogiSam's assistant</b><small>Answers in seconds, day or night</small></div>
- <div class="msgs" id="msgs"></div>
- <div class="quick" id="quick">
-  <button>Class times</button><button>Online classes</button><button>I'm a beginner</button><button>Prices</button><button>Book a class</button>
- </div>
- <form id="f"><input id="q" placeholder="Type a question…" autocomplete="off"><button>Send</button></form>
- <div class="note">Demo: this shows how Zara would answer Sam's clients.</div>
+<button class="zbtn" id="zbtn" aria-expanded="false" aria-controls="zchat"><span class="dot">Z</span>Ask Zara</button>
+<div class="zchat" id="zchat" role="dialog" aria-label="Chat with Zara">
+ <div class="zh"><span class="dot">Z</span><div><b>Zara</b><small>Sam's assistant, answers any time</small></div><button id="zx" aria-label="Close chat">×</button></div>
+ <div class="zm" id="zm" aria-live="polite"></div>
+ <div class="zq" id="zq"><button>Class times</button><button>I'm a beginner</button><button>Seniors classes</button><button>Online classes</button><button>Book a class</button></div>
+ <form class="zf" id="zf"><input id="zi" placeholder="Ask about classes…" autocomplete="off" aria-label="Your message"><button>Send</button></form>
+ <div class="znote">Demo: this is how Zara would answer Sam's clients.</div>
 </div>
 
 <script>
-const msgs=document.getElementById('msgs'),chat=document.getElementById('chat'),btn=document.getElementById('chatBtn');
-const WA='https://wa.me/27604392100?text=Hi%20Sam%2C%20I%27d%20like%20to%20book%20a%20class';
-let stage=null,booking={};
-function add(t,who){const d=document.createElement('div');d.className='m '+who;d.textContent=t;msgs.appendChild(d);msgs.scrollTop=msgs.scrollHeight}
-function bot(t){setTimeout(()=>add(t,'bot'),450)}
+const zm=document.getElementById('zm'),zc=document.getElementById('zchat'),zb=document.getElementById('zbtn');
+let stage=null,who='';
+function add(t,c){const d=document.createElement('div');d.className='m '+c;d.textContent=t;zm.appendChild(d);zm.scrollTop=zm.scrollHeight}
+function bot(t){setTimeout(()=>add(t,'bot'),420)}
 const A={
- times:"Evening classes (Old Vaaltonians Club), all 17:15–18:15:\nMon Pilates · Tue Yoga · Wed Circuit Fit/Pilates · Thu Yoga\nThere's a 15-min Circuit Fit warm-up from 17:00.\n\nOnline mornings:\nMon 07:00 Pilates · Wed 06:00 Yoga Vinyasa · Fri 06:15 Sunrise Yoga Flow",
- online:"The morning classes are all online, so you can join from home:\nMonday 07:00 Pilates\nWednesday 06:00 Yoga Vinyasa\nFriday 06:15 Sunrise Yoga Flow",
- beginner:"Every class is for all levels, so you're very welcome! Many people start with Tuesday or Thursday evening Yoga. Shall I book you in? Just type your name.",
- price:"Sam will send you her current prices and class packages. Would you like me to ask her? Type your name and I'll pass it on.",
+ times:"Evenings at the Old Vaaltonians Club, 17:15 – 18:15 (warm-up from 17:00):\nMon Pilates, Tue Yoga, Wed Circuit Fit or Pilates, Thu Yoga\n\nLive online mornings:\nMon 07:00 Pilates, Wed 06:00 Yoga Vinyasa, Fri 06:15 Sunrise Yoga Flow\n\nSeniors at The Palms: Mon and Wed 09:45 – 10:30",
+ online:"The morning classes are live online, so you move with Sam in real time from home:\nMonday 07:00 Pilates\nWednesday 06:00 Yoga Vinyasa\nFriday 06:15 Sunrise Yoga Flow\n\nAll you need is a mat, a small space and Wi-Fi.",
+ seniors:"Pilates for Seniors is on Mondays and Wednesdays, 09:45 – 10:30, in the Activity Room at The Palms Aftree-oord.\n\nIt's R400 a month for two classes a week, and a trial class is R50. Would you like to try one? Just type your name.",
+ beginner:"You're very welcome, every class is for all levels. Tuesday or Thursday evening Yoga is a lovely place to start. Shall I book you a spot? Type your name.",
+ price:"Pilates for Seniors is R400 a month (two classes a week), with a R50 trial class. For the other classes, Sam will send you her current prices. What's your name? I'll pass it on.",
  book:"Lovely! What's your name?",
- other:"Good question! I'll make sure Sam sees it. You can also WhatsApp her directly on 060 439 2100."
+ other:"Good question. I'll make sure Sam sees it, and you can also WhatsApp her on 060 439 2100."
 };
-function answer(q){
+function reply(q){
  const s=q.toLowerCase();
- if(stage==='name'){booking.name=q;stage='class';return bot("Thanks, "+q+"! Which class would you like to try? (e.g. Tuesday Yoga)")}
- if(stage==='class'){booking.cls=q;stage=null;return bot("Done ✨ I've noted "+booking.name+" for "+q+".\n\nIn the real version Sam gets this booking straight away, and you'd get a reminder before class.")}
+ if(stage==='name'){who=q.trim();stage='cls';return bot("Thank you, "+who+". Which class would you like to try?")}
+ if(stage==='cls'){stage=null;return bot("Done. I've noted "+who+" for "+q.trim()+".\n\nIn the live version Sam gets your booking straight away, and you get a reminder before class.")}
+ if(/senior|palms|older|ouer/.test(s)){stage='name';return bot(A.seniors)}
+ if(/online|home|laptop|morning|oggend/.test(s))return bot(A.online);
  if(/time|when|timetable|schedule|evening|tyd|wanneer/.test(s))return bot(A.times);
- if(/online|home|zoom|morning|oggend/.test(s))return bot(A.online);
  if(/begin|new|first|never|nuut/.test(s)){stage='name';return bot(A.beginner)}
  if(/price|cost|how much|fee|prys|kos/.test(s)){stage='name';return bot(A.price)}
  if(/book|join|try|bespreek/.test(s)){stage='name';return bot(A.book)}
- if(/where|address|venue|waar/.test(s))return bot("Evening classes are at the Old Vaaltonians Club in Vanderbijlpark, in a beautiful big hall. Morning classes are online.");
- if(/teacher|training|opleiding/.test(s))return bot("Sam offers Yoga Teacher Training. I'll let her know you're interested. What's your name?"),stage='name';
- if(/kid|child|pregnan|swanger|tap/.test(s))return bot("Sam offers Kids Yoga, Pregnancy Yoga and Tap classes too. Times vary, so I'll ask her to send you the details. What's your name?"),stage='name';
+ if(/where|address|venue|waar/.test(s))return bot("Evenings are at the Old Vaaltonians Club in Vanderbijlpark. Seniors classes are at The Palms Aftree-oord, and the morning classes are online.");
+ if(/mat|bring|water/.test(s))return bot("Bring your own mat and a water bottle. Sam has spare mats if you need one.");
+ if(/teacher|training|pregnan|kid|child|tap|retreat|heal/.test(s)){stage='name';return bot("Sam offers that too. Times and dates change, so I'll ask her to send you the details. What's your name?")}
  return bot(A.other);
 }
-function send(q){if(!q.trim())return;add(q,'me');answer(q)}
-btn.onclick=()=>{const o=chat.classList.toggle('open');btn.setAttribute('aria-expanded',o);if(o&&!msgs.children.length)bot("Hi! I'm Zara, Sam's assistant 🌿 Ask me about class times, online classes or booking.")};
-document.getElementById('f').onsubmit=e=>{e.preventDefault();const i=document.getElementById('q');send(i.value);i.value=''};
-document.querySelectorAll('#quick button').forEach(b=>b.onclick=()=>send(b.textContent));
+function send(q){if(!q.trim())return;add(q,'me');reply(q)}
+function toggle(open){zc.classList.toggle('open',open);zb.setAttribute('aria-expanded',open);if(open){if(!zm.children.length)bot("Hi, I'm Zara, Sam's assistant. Ask me about class times, the seniors classes or booking.");document.getElementById('zi').focus()}}
+zb.onclick=()=>toggle(!zc.classList.contains('open'));
+document.getElementById('zx').onclick=()=>toggle(false);
+document.getElementById('zf').onsubmit=e=>{e.preventDefault();const i=document.getElementById('zi');send(i.value);i.value=''};
+document.querySelectorAll('#zq button').forEach(b=>b.onclick=()=>send(b.textContent));
 </script>
 </body>
 </html>
