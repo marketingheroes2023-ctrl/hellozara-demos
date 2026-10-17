@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="af">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Liplekker Spyseniers · Vanderbijlpark</title>
+<meta name="description" content="Lekkerste boerekos, groot en klein funksies, troue-spyseniering, platters en wegneem-aandetes in die Vaaldriehoek.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Lora:ital,wght@1,500&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --copper:#a4561f;
+  --copper-deep:#7d3f14;
+  --bark:#2f1d12;
+  --cream:#f8f1e6;
+  --linen:#efe3d0;
+  --plate:#2c4b7c;
+  --tomato:#c23a1f;
+  --olive:#6d7a3b;
+  --ink:#3a2a20;
+  --line:#e2d3bb;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{margin:0;background:var(--cream);color:var(--ink);font:400 17px/1.6 "Source Sans 3",system-ui,sans-serif}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--tomato);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:"DM Serif Display",Georgia,serif;font-weight:400;line-height:1.05;margin:0}
+.it{font-family:"Lora",Georgia,serif;font-style:italic;font-weight:500}
+
+.demo-note{background:var(--bark);color:#f3e6d3;font-size:14px;text-align:center;padding:8px 16px}
+.demo-note a{color:#f0c79c}
+
+header{position:sticky;top:0;z-index:20;background:rgba(248,241,230,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;height:74px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand img{width:48px;height:48px;border-radius:50%;object-fit:cover}
+.brand span{font-family:"DM Serif Display",serif;font-size:25px;color:var(--copper);line-height:1}
+.brand small{display:block;font:600 12px "Source Sans 3",sans-serif;letter-spacing:.08em;color:var(--ink);margin-top:3px}
+.nav ul{display:flex;gap:26px;list-style:none;margin:0;padding:0;font-weight:600;font-size:15px}
+.nav ul a{text-decoration:none}
+.nav ul a:hover{color:var(--copper)}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--copper);color:#fff;text-decoration:none;font:700 15px "Source Sans 3",sans-serif;padding:13px 22px;border-radius:6px;border:0;cursor:pointer}
+.btn:hover{background:var(--copper-deep)}
+.btn.light{background:#fff;color:var(--bark)}
+.btn.light:hover{background:var(--linen)}
+.btn.line{background:transparent;color:#fff;box-shadow:inset 0 0 0 2px rgba(255,255,255,.8)}
+.btn.line:hover{background:rgba(255,255,255,.12)}
+
+/* hero */
+.hero{position:relative;min-height:640px;display:flex;align-items:flex-end;color:#fff;background:var(--bark)}
+.hero > img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 60%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(35,20,10,.88) 0%,rgba(35,20,10,.6) 45%,rgba(35,20,10,.05) 80%)}
+.hero .wrap{position:relative;z-index:1;padding-top:80px;padding-bottom:72px;width:100%}
+.hero h1{font-size:clamp(46px,6.6vw,88px);max-width:12ch;color:#fff}
+.hero h1 em{font-family:"DM Serif Display",serif;font-style:italic;color:#f0c79c}
+.hero p{font-size:20px;max-width:38ch;margin:22px 0 30px;color:#f6ead8}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.proof{display:flex;flex-wrap:wrap;gap:10px 28px;margin-top:34px;font-size:15px;color:#f6ead8}
+.proof b{color:#fff}
+
+/* tile band, from the blue patterned serving plates */
+.tiles{height:22px;background-color:var(--plate);background-image:
+  radial-gradient(circle at 50% 50%,#f8f1e6 3px,transparent 4px),
+  linear-gradient(45deg,transparent 42%,rgba(248,241,230,.85) 43% 47%,transparent 48% 52%,rgba(248,241,230,.85) 53% 57%,transparent 58%);
+  background-size:22px 22px}
+
+section{padding:96px 0}
+.eyebrow{font-family:"Lora",serif;font-style:italic;color:var(--copper);font-size:21px;margin-bottom:6px}
+.head{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end;margin-bottom:46px}
+.head h2{font-size:clamp(36px,4.4vw,56px)}
+.head p{margin:0;max-width:44ch;color:#6a5646}
+
+/* services menu */
+.menu{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:start}
+.menu ol{list-style:none;margin:0;padding:0;counter-reset:m}
+.menu li{counter-increment:m;display:grid;grid-template-columns:64px 1fr auto;gap:18px;align-items:baseline;padding:22px 0;border-bottom:1px dashed var(--line)}
+.menu li:first-child{border-top:1px dashed var(--line)}
+.menu li::before{content:counter(m,decimal-leading-zero);font-family:"DM Serif Display",serif;font-size:30px;color:var(--copper)}
+.menu h3{font-size:28px}
+.menu p{margin:4px 0 0;color:#6a5646}
+.menu li a{font-weight:700;font-size:14px;color:var(--copper);text-decoration:none;white-space:nowrap}
+.menu li a:hover{text-decoration:underline}
+.menu figure{margin:0;position:sticky;top:100px}
+.menu figure img{border-radius:10px;aspect-ratio:4/5;object-fit:cover;width:100%}
+.menu figcaption{font-family:"Lora",serif;font-style:italic;color:#6a5646;margin-top:10px}
+
+/* gallery */
+.gallery-sec{background:var(--bark);color:#fff}
+.gallery-sec .head p{color:#e6d6bf}
+.gallery-sec h2{color:#fff}
+.gallery-sec .eyebrow{color:#f0c79c}
+.strip{display:grid;grid-template-columns:1.3fr 1fr 1fr;grid-template-rows:260px 260px;gap:14px}
+.strip figure{margin:0;position:relative;overflow:hidden;border-radius:8px}
+.strip img{width:100%;height:100%;object-fit:cover}
+.strip figcaption{position:absolute;left:0;right:0;bottom:0;padding:30px 14px 12px;background:linear-gradient(transparent,rgba(0,0,0,.7));font-weight:600;font-size:15px}
+.strip .g1{grid-row:1/3}
+.strip .g4{grid-column:2/4}
+
+/* quote planner */
+.quote{display:grid;grid-template-columns:.85fr 1.15fr;gap:56px;align-items:start}
+.quote aside h2{font-size:clamp(36px,4.4vw,56px)}
+.quote aside p{color:#6a5646;max-width:38ch}
+.areas{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px;padding:0;list-style:none}
+.areas li{background:var(--linen);border-radius:999px;padding:6px 14px;font-weight:600;font-size:14px}
+form.card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:32px;box-shadow:0 24px 50px rgba(47,29,18,.08)}
+form.card h3{font-size:32px;margin-bottom:4px}
+form.card > p{margin:0 0 22px;color:#6a5646}
+fieldset{border:0;padding:0;margin:0 0 18px}
+legend{font-weight:700;font-size:14px;margin-bottom:8px;padding:0}
+.opts{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.opts label{cursor:pointer;position:relative}
+.opts input{position:absolute;opacity:0}
+.opts span{display:block;text-align:center;padding:10px 8px;border:2px solid var(--line);border-radius:8px;font-weight:600;font-size:14px;line-height:1.25}
+.opts input:checked + span{border-color:var(--copper);background:#fbefe4;color:var(--copper-deep)}
+.opts input:focus-visible + span{outline:3px solid var(--tomato);outline-offset:2px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.field{display:flex;flex-direction:column;gap:6px;margin-bottom:14px;font-weight:700;font-size:14px}
+.field input,.field select,.field textarea{font:400 16px "Source Sans 3",sans-serif;border:1px solid #d5c3a6;border-radius:8px;padding:11px 12px;background:var(--cream);color:var(--ink)}
+.field textarea{min-height:80px;resize:vertical}
+.out{background:var(--linen);border-left:4px solid var(--copper);border-radius:6px;padding:14px 16px;white-space:pre-line;font-size:15px;margin:4px 0 18px}
+.out b{display:block;font-size:12px;letter-spacing:.08em;color:var(--copper-deep);margin-bottom:4px}
+.small{font-size:13px;color:#7a6656;margin-top:12px}
+
+/* review */
+.review{background:var(--linen);text-align:center}
+.review blockquote{margin:0 auto;font:400 clamp(34px,4.6vw,60px)/1.1 "DM Serif Display",serif;max-width:20ch;color:var(--bark)}
+.review .stars{color:var(--tomato);letter-spacing:5px;font-size:20px;margin-bottom:18px}
+.review cite{display:block;margin-top:18px;font-style:normal;color:#6a5646}
+
+/* contact */
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.contact h2{font-size:clamp(36px,4.4vw,56px)}
+.contact dl{display:grid;grid-template-columns:auto 1fr;gap:12px 24px;margin:26px 0 30px}
+.contact dt{font-weight:700}
+.contact dd{margin:0;color:#6a5646}
+.contact .pic img{border-radius:10px}
+footer{border-top:1px solid var(--line);padding:26px 0;font-size:14px;color:#7a6656}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+
+/* Zara */
+.zara-btn{position:fixed;right:20px;bottom:20px;z-index:40;display:flex;align-items:center;gap:10px;background:var(--bark);color:#fff;border:0;border-radius:999px;padding:11px 18px 11px 11px;font:700 15px "Source Sans 3",sans-serif;cursor:pointer;box-shadow:0 12px 30px rgba(0,0,0,.3)}
+.zara-btn i{width:34px;height:34px;border-radius:50%;background:var(--copper);display:grid;place-items:center;font:italic 19px "DM Serif Display",serif}
+.chat{position:fixed;right:20px;bottom:84px;z-index:41;width:min(370px,calc(100vw - 32px));height:min(540px,calc(100vh - 120px));background:#fff;border-radius:14px;box-shadow:0 24px 60px rgba(0,0,0,.28);display:none;flex-direction:column;overflow:hidden}
+.chat.open{display:flex}
+.chat-top{background:var(--copper);color:#fff;padding:14px 16px;display:flex;justify-content:space-between;align-items:center}
+.chat-top b{display:block}
+.chat-top small{opacity:.9}
+.chat-top button{background:none;border:0;color:#fff;font-size:24px;cursor:pointer;line-height:1}
+.log{flex:1;overflow:auto;padding:16px;display:flex;flex-direction:column;gap:10px;background:var(--cream)}
+.msg{max-width:86%;padding:10px 13px;border-radius:12px;font-size:15px;line-height:1.45}
+.msg.z{background:#fff;border:1px solid var(--line);align-self:flex-start;border-bottom-left-radius:3px}
+.msg.u{background:var(--copper);color:#fff;align-self:flex-end;border-bottom-right-radius:3px}
+.quick{display:flex;flex-wrap:wrap;gap:6px;padding:10px 12px;border-top:1px solid var(--line)}
+.quick button{font:600 13px "Source Sans 3",sans-serif;border:1px solid #d5c3a6;background:#fff;color:var(--ink);border-radius:999px;padding:6px 11px;cursor:pointer}
+.quick button:hover{border-color:var(--copper)}
+.ask{display:flex;gap:8px;padding:10px 12px 14px}
+.ask input{flex:1;font:inherit;font-size:15px;border:1px solid #d5c3a6;border-radius:999px;padding:9px 14px}
+.ask button{border:0;background:var(--copper);color:#fff;border-radius:999px;padding:0 16px;font-weight:700;cursor:pointer}
+.chat-note{font-size:11px;color:#7a6656;text-align:center;padding:0 12px 10px}
+
+@media (max-width:900px){
+  .nav ul{display:none}
+  .hero{min-height:560px}
+  .hero::after{background:linear-gradient(0deg,rgba(35,20,10,.92) 0%,rgba(35,20,10,.6) 60%,rgba(35,20,10,.25) 100%)}
+  .head,.menu,.quote,.contact{grid-template-columns:1fr}
+  .head{gap:14px}
+  .menu figure{position:static}
+  .strip{grid-template-columns:1fr 1fr;grid-template-rows:200px 200px 200px}
+  .strip .g1{grid-row:auto;grid-column:1/3}
+  .strip .g4{grid-column:1/3}
+  section{padding:68px 0}
+}
+@media (max-width:520px){
+  .brand small{display:none}
+  .nav .btn{padding:10px 14px;font-size:14px}
+  .opts{grid-template-columns:1fr 1fr}
+  .row{grid-template-columns:1fr}
+  .menu li{grid-template-columns:44px 1fr}
+  .menu li a{grid-column:2}
+  .zara-btn span{display:none}
+  .zara-btn{padding:11px}
+}
+</style>
+</head>
+<body>
+
+<div class="demo-note">'n Demo-webwerf wat Hello Zara vir Marita by Liplekker Spyseniers ontwerp het. Niks hier is lewendig voor sy ja sê nie. <a href="https://hellozara.solutions">hellozara.solutions</a></div>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="Liplekker Spyseniers, tuis">
+      <img src="img/logo.jpg" alt="" width="48" height="48">
+      <div><span>Liplekker</span><small>SPYSENIERS · VANDERBIJLPARK</small></div>
+    </a>
+    <ul>
+      <li><a href="#dienste">Dienste</a></li>
+      <li><a href="#kos">Ons kos</a></li>
+      <li><a href="#kwotasie">Kwotasie</a></li>
+      <li><a href="#kontak">Kontak</a></li>
+    </ul>
+    <a class="btn" href="#kwotasie">Vra 'n kwotasie</a>
+  </div>
+</header>
+
+<main id="top">
+<div class="hero">
+  <img src="img/buffet-table.jpg" alt="'n Buffettafel by 'n funksie, met kaasborde, vrugte, frikkadelle en tertjies" width="1176" height="625">
+  <div class="wrap">
+    <h1>Lekkerste boerekos vir <em>jou</em> funksie.</h1>
+    <p>Groot en klein funksies, troue-spyseniering, platters en heerlike wegneem-aandetes. Van Marita Jonker en Liplekker Spyseniers in Vanderbijlpark.</p>
+    <div class="actions">
+      <a class="btn light" href="#kwotasie">Beplan jou funksie</a>
+      <a class="btn line" href="#kos">Kyk na ons kos</a>
+    </div>
+    <div class="proof">
+      <span><b>5,0</b> op Google (7 resensies)</span>
+      <span><b>100%</b> beveel aan op Facebook</span>
+      <span>Regoor die <b>Vaaldriehoek</b></span>
+    </div>
+  </div>
+</div>
+<div class="tiles" aria-hidden="true"></div>
+
+<section id="dienste">
+  <div class="wrap">
+    <div class="head">
+      <div><div class="eyebrow">wat ons doen</div><h2>Van 'n skottel tot 'n hele troue.</h2></div>
+      <p>Sê vir Marita wat die geleentheid is en hoeveel gaste daar sal wees. Sy stel die kos saam en stuur vir jou 'n kwotasie.</p>
+    </div>
+    <div class="menu">
+      <ol>
+        <li><div><h3>Groot en klein funksies</h3><p>Buffette vol boerekos vir jou geleentheid, of dit nou groot of klein is.</p></div><a href="#kwotasie" data-kind="Funksie">Kwotasie →</a></li>
+        <li><div><h3>Troue-spyseniering</h3><p>Kos vir jou troudag, sodat jy en jou gaste net kan geniet.</p></div><a href="#kwotasie" data-kind="Troue">Kwotasie →</a></li>
+        <li><div><h3>Lam op die spit</h3><p>'n Maklike keuse vir enige funksie, met lekker slaai en broodjies.</p></div><a href="#kwotasie" data-kind="Lam op die spit">Kwotasie →</a></li>
+        <li><div><h3>Platters en vingerete</h3><p>Skottels vol happies en individuele vingerete-boksies vir middagete.</p></div><a href="#kwotasie" data-kind="Platters">Kwotasie →</a></li>
+        <li><div><h3>Wegneem-aandetes</h3><p>Heerlike aandetes om saam te neem huis toe.</p></div><a href="#kwotasie" data-kind="Wegneem-aandete">Vra →</a></li>
+      </ol>
+      <figure><img src="img/snack-trays.jpg" alt="Skinkborde vol happies: frikkadelle, samoesas, kaasballetjies en tamatietjies" loading="lazy" width="660" height="885"><figcaption>Happie-skinkborde, reg vir aflewering</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="kos" class="gallery-sec">
+  <div class="wrap">
+    <div class="head">
+      <div><div class="eyebrow">uit Marita se kombuis</div><h2>Kos wat jou gaste onthou.</h2></div>
+      <p>'n Paar onlangse funksies en skottels, net soos hulle op die dag uitgesien het.</p>
+    </div>
+    <div class="strip">
+      <figure class="g1"><img src="img/platter.jpg" alt="'n Vleisskottel met ham-rolletjies, salami, kaas en komkommer-sosaties" loading="lazy"><figcaption>Vleis- en kaasskottel</figcaption></figure>
+      <figure class="g2"><img src="img/sweet-trays.jpg" alt="Skinkborde vol soet happies: tertjies, sjokoladekoek en fudge" loading="lazy"><figcaption>Soet skinkborde</figcaption></figure>
+      <figure class="g3"><img src="img/sandwich-trays.jpg" alt="Toebroodjie-skottels met eier, ham en kaas" loading="lazy"><figcaption>Toebroodjie-skottels</figcaption></figure>
+      <figure class="g4"><img src="img/bread-board.jpg" alt="'n Broodplank met vars brood, botter, konfyt, kaas en smere" loading="lazy" style="object-position:center 40%"><figcaption>Broodplank met smere</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="kwotasie">
+  <div class="wrap quote">
+    <aside>
+      <div class="eyebrow">vra 'n kwotasie</div>
+      <h2>Vertel ons van jou dag.</h2>
+      <p>Vul die vorm in, dan word dit 'n WhatsApp-boodskap aan Marita met alles wat sy nodig het om jou 'n kwotasie te stuur.</p>
+      <ul class="areas" aria-label="Areas">
+        <li>Vanderbijlpark</li><li>Vaalpark</li><li>Sasolburg</li><li>Vereeniging</li><li>Vaaldriehoek</li>
+      </ul>
+    </aside>
+    <form class="card" id="q" novalidate>
+      <h3>Beplan jou funksie</h3>
+      <p>Dit neem minder as 'n minuut.</p>
+      <fieldset>
+        <legend>Wat beplan jy?</legend>
+        <div class="opts">
+          <label><input type="radio" name="kind" value="Funksie" checked><span>Funksie</span></label>
+          <label><input type="radio" name="kind" value="Troue"><span>Troue</span></label>
+          <label><input type="radio" name="kind" value="Lam op die spit"><span>Lam op die spit</span></label>
+          <label><input type="radio" name="kind" value="Platters"><span>Platters</span></label>
+          <label><input type="radio" name="kind" value="Vingerete-boksies"><span>Vingerete-boksies</span></label>
+          <label><input type="radio" name="kind" value="Wegneem-aandete"><span>Wegneem-aandete</span></label>
+        </div>
+      </fieldset>
+      <div class="row">
+        <label class="field">Datum<input type="date" id="d"></label>
+        <label class="field">Aantal gaste<input id="g" inputmode="numeric" placeholder="bv. 60"></label>
+      </div>
+      <div class="row">
+        <label class="field">Waar?<input id="w" placeholder="bv. Vaalpark"></label>
+        <label class="field">Jou naam<input id="n" autocomplete="given-name" placeholder="Voornaam"></label>
+      </div>
+      <label class="field">Enigiets anders?<textarea id="x" placeholder="Die geleentheid, kos wat jy graag wil hê…"></textarea></label>
+      <div class="out" aria-live="polite"><b>JOU BOODSKAP AAN MARITA</b><span id="msg"></span></div>
+      <button class="btn" type="submit">Stuur op WhatsApp</button>
+      <p class="small">Demo: in die lewendige weergawe land dit ook in Marita se inboks, en jy kry 'n herinnering voor die dag.</p>
+    </form>
+  </div>
+</section>
+
+<section class="review">
+  <div class="wrap">
+    <div class="stars" aria-label="5 sterre">★★★★★</div>
+    <blockquote>“Best service in the Vaal Triangle”</blockquote>
+    <cite>Kobus, Google-resensie</cite>
+  </div>
+</section>
+
+<section id="kontak">
+  <div class="wrap contact">
+    <div>
+      <div class="eyebrow">kom gesels</div>
+      <h2>Kontak Marita</h2>
+      <dl>
+        <dt>Bel of WhatsApp</dt><dd><a href="https://wa.me/27833073672" target="_blank" rel="noopener">083 307 3672</a></dd>
+        <dt>E-pos</dt><dd><a href="mailto:jonkerm14@telkomsa.net">jonkerm14@telkomsa.net</a></dd>
+        <dt>Waar</dt><dd>Vanderbijlpark SW2</dd>
+        <dt>Facebook</dt><dd><a href="https://www.facebook.com/liplekkerspyseniers" target="_blank" rel="noopener">Liplekker Spyseniers</a></dd>
+      </dl>
+      <a class="btn" href="https://wa.me/27833073672" target="_blank" rel="noopener">WhatsApp Marita</a>
+    </div>
+    <div class="pic"><img src="img/buffet-spread.jpg" alt="Buffet met waatlemoen, worsies, frikkadelle met tamatietjies en samoesas" loading="lazy" width="900" height="614"></div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap"><span>© Liplekker Spyseniers · Vanderbijlpark</span><span>Demo deur <a href="https://hellozara.solutions">Hello Zara</a></span></div></footer>
+
+<button class="zara-btn" id="zo" aria-expanded="false" aria-controls="chat"><i>Z</i><span>Vra vir Zara</span></button>
+<div class="chat" id="chat" role="dialog" aria-label="Gesels met Zara">
+  <div class="chat-top"><div><b>Zara · Liplekker</b><small>Marita se assistent (demo)</small></div><button id="zc" aria-label="Maak toe">×</button></div>
+  <div class="log" id="log" aria-live="polite"></div>
+  <div class="quick" id="quick">
+    <button data-q="quote">Ek wil 'n kwotasie hê</button>
+    <button data-q="what">Wat doen julle?</button>
+    <button data-q="where">Watter areas?</button>
+    <button data-q="price">Hoeveel kos dit?</button>
+  </div>
+  <form class="ask" id="ask"><input id="ai" placeholder="Tik jou vraag…" aria-label="Jou vraag"><button>Stuur</button></form>
+  <div class="chat-note">Demo-klets deur Hello Zara</div>
+</div>
+
+<script>
+const WA='27833073672', $=s=>document.querySelector(s);
+function build(){
+  const k=document.querySelector('input[name=kind]:checked').value, d=$('#d').value, g=$('#g').value.trim(), w=$('#w').value.trim(), n=$('#n').value.trim(), x=$('#x').value.trim();
+  let date='';
+  if(d){date=new Date(d+'T12:00').toLocaleDateString('af-ZA',{weekday:'long',day:'numeric',month:'long',year:'numeric'});}
+  const L=[`Hallo Marita${n?', dis '+n:''}! Ek wil graag 'n kwotasie hê vir: ${k}.`];
+  if(date)L.push(`Datum: ${date}`);
+  if(g)L.push(`Aantal gaste: ${g}`);
+  if(w)L.push(`Waar: ${w}`);
+  if(x)L.push(`Verder: ${x}`);
+  return L.join('\n');
+}
+const upd=()=>$('#msg').textContent=build();
+$('#q').addEventListener('input',upd);
+$('#q').addEventListener('submit',e=>{e.preventDefault();window.open('https://wa.me/'+WA+'?text='+encodeURIComponent(build()),'_blank','noopener');});
+document.querySelectorAll('[data-kind]').forEach(a=>a.addEventListener('click',()=>{const r=document.querySelector(`input[name=kind][value="${a.dataset.kind}"]`);if(r){r.checked=true;upd();}}));
+upd();
+
+/* demo chat: answers only from Liplekker's own page */
+const log=$('#log'),chat=$('#chat');let step=null,o={};
+function say(t,w='z'){const m=document.createElement('div');m.className='msg '+w;m.textContent=t;log.appendChild(m);log.scrollTop=log.scrollHeight;}
+function open(){chat.classList.add('open');$('#zo').setAttribute('aria-expanded','true');if(!log.children.length)say("Hallo! Ek is Zara, Marita se assistent by Liplekker Spyseniers. Ek kan 'n kwotasie vir jou begin of 'n vinnige vraag beantwoord.");$('#ai').focus();}
+function close(){chat.classList.remove('open');$('#zo').setAttribute('aria-expanded','false');}
+$('#zo').onclick=()=>chat.classList.contains('open')?close():open();$('#zc').onclick=close;
+const A={
+  what:"Ons doen groot en klein funksies, troue-spyseniering, lam op die spit, platters en vingerete-boksies, en heerlike wegneem-aandetes.",
+  where:"Ons is in Vanderbijlpark en werk regoor die Vaaldriehoek: Vanderbijlpark, Vaalpark, Sasolburg en Vereeniging.",
+  price:"Elke funksie is anders, so Marita stuur 'n kwotasie op grond van jou geleentheid en hoeveel gaste daar is. Sal ek een vir jou begin?"
+};
+function startQ(){step='kind';o={};say("Lekker! Watter soort geleentheid is dit?");}
+function flow(t){
+  if(step==='kind'){o.kind=t;step='date';return say("Op watter datum?");}
+  if(step==='date'){o.date=t;step='guests';return say("Ongeveer hoeveel gaste?");}
+  if(step==='guests'){o.guests=t;step='name';return say("Laaste een: wat is jou naam?");}
+  if(step==='name'){step=null;say(`Dankie, ${t.replace(/^./,c=>c.toUpperCase())}! Ek het genoteer: ${o.kind}, ${o.date}, ongeveer ${o.guests} gaste.`);
+    return say("In die lewendige weergawe kry Marita dit dadelik en stuur sy vir jou 'n kwotasie. Jy kry ook 'n herinnering voor die dag.");}
+}
+function answer(t){const q=t.toLowerCase();
+  if(step)return flow(t);
+  if(/kwot|quote|boek|bespreek|funksie vir/.test(q))return startQ();
+  if(/prys|hoeveel|koste|price|cost|r\d/.test(q))return say(A.price);
+  if(/waar|area|lewer|vaalpark|sasolburg|vereeniging/.test(q))return say(A.where);
+  if(/wat|doen|kos|spit|platter|troue|aandete/.test(q))return say(A.what);
+  say("Goeie vraag! Ek sal sorg dat Marita dit sien. Jy kan haar ook op 083 307 3672 WhatsApp.");}
+$('#quick').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;say(b.textContent,'u');step=null;b.dataset.q==='quote'?startQ():say(A[b.dataset.q]);});
+$('#ask').addEventListener('submit',e=>{e.preventDefault();const v=$('#ai').value.trim();if(!v)return;say(v,'u');$('#ai').value='';setTimeout(()=>answer(v),350);});
+</script>
+</body>
+</html>
