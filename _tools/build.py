@@ -42,7 +42,7 @@ VENUES = [
       desc='Troues en funksies op \'n plaas in Sonland Park, Vereeniging: tuine, koi-damme en volstruise wat rondloop.',
       fonts='family=Pinyon+Script&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Nunito+Sans:wght@400;600;700',
       head='"Cormorant Garamond",Georgia,serif', body='"Nunito Sans",system-ui,sans-serif', script='"Pinyon Script",cursive',
-      c=dict(a='#4f7f73', a2='#36594f', bg='#f7f4ee', panel='#e7efe9', ink='#2e3a35', muted='#5f6f68', line='#d8e2db', dark='#24332d', accent='#8fa9c4', soft='#efe1e1'),
+      c=dict(a='#4f7f73', a2='#36594f', bg='#f7f4ee', panel='#e7efe9', ink='#2e3a35', muted='#5f6f68', line='#d8e2db', dark='#24332d', accent='#f1d9c6', soft='#efe1e1'),
       logo='img/logo.jpg', brand_line='TROUE- EN FUNKSIELOKAAL',
       hero='img/windmill.jpg', hero_alt='Die windpomp en \'n ligblou kombi in die veld by Die Plaasdam met sonsondergang',
       h1='Jou troue op <em>die plaas</em>.', lead='Rustieke bosveld, mooi versorgde tuine en koi-damme, met volstruise en springbokke wat rondloop. In Sonland Park, Vereeniging.',
