@@ -44,7 +44,7 @@ FICTION = [
       a_where='This is a sample venue. On your website this shows your own address and a map.',
       a_price='Every event is different, so Anna sends a quote for your date and number of guests. Shall I ask about your date?',
       motif='lights', split=True, **HZ),
- dict(slug='voorbeeld-koek', L=AF2, name='Suikerbossie Koffie & Koek', owner='Marlize', they='sy', title="Suikerbossie Koffie & Koek · voorbeeld-webwerf deur Hello Zara",
+ dict(slug='voorbeeld-koek', L=AF2, name='Suikerbossie', owner='Marlize', they='sy', title="Suikerbossie Koffie & Koek · voorbeeld-webwerf deur Hello Zara",
       desc="'n Voorbeeld-webwerf vir 'n koekwinkel en koffiewinkel, deur Hello Zara.",
       fonts='family=Pacifico&family=Nunito:wght@400;600;700',
       head='"Nunito",system-ui,sans-serif', body='"Nunito",system-ui,sans-serif', script='"Pacifico",cursive',
