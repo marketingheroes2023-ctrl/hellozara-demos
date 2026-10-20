@@ -182,9 +182,15 @@ body{overflow-x:clip}
 .hz-more .hz-tag{font:700 12px/1 system-ui,sans-serif;letter-spacing:.14em;color:#7a3e9d;text-transform:uppercase;margin-bottom:10px}
 .hz-more h2{font-size:clamp(30px,3.6vw,46px);margin:0 0 12px;line-height:1.1}
 .hz-more .hz-p{max-width:60ch;margin:0 0 30px;color:#5a5262}
-.hz-more ol{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;counter-reset:hz}
+.hz-more ol{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:16px;counter-reset:hz;align-items:stretch}
 .hz-more li{counter-increment:hz;background:#fff;border:1px solid #e5dcea;border-radius:14px;padding:22px}
 .hz-more li::before{content:counter(hz);display:inline-grid;place-items:center;width:30px;height:30px;border-radius:50%;background:#7a3e9d;color:#fff;font:700 15px system-ui,sans-serif;margin-bottom:12px}
+.hz-more li em{display:block;font:700 11px system-ui,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#7a3e9d;font-style:normal;margin-bottom:6px}
+.hz-more li.hz-now{border:2px solid #7a3e9d;box-shadow:0 18px 40px rgba(122,62,157,.14);padding:26px}
+.hz-more li.hz-now b{font-size:23px}
+.hz-more li.hz-later{background:transparent;border-style:dashed;opacity:.85}
+.hz-more li.hz-later::before{background:#cdb9da}
+.hz-more li.hz-later em{color:#8a7f92}
 .hz-more li b{display:block;font-size:19px;margin-bottom:6px}
 .hz-more li span{color:#5a5262;font-size:15px;line-height:1.5}
 .hz-more .hz-f{display:flex;flex-wrap:wrap;align-items:center;gap:16px;margin-top:26px}
@@ -245,10 +251,10 @@ body{overflow-x:clip}
   <div class="pic"><img src="img/hall.jpg" alt="Die onthaal-saal met liggies en die dansvloer" loading="lazy"></div>
 </div></section>
 </main>
-<section class="hz-more" id="meer" aria-label="Meer as &#x27;n webwerf, as jy wil"><div class="hz-w">
-<div class="hz-tag">Hello Zara</div><h2>Meer as &#x27;n webwerf, as jy wil</h2><p class="hz-p">Hierdie demo stuur navrae na WhatsApp. Agter jou webwerf kan ook &#x27;n hele stelsel wees, as dit vir jou sin maak. Jy kies wat jy nodig het.</p>
-<ol><li><b>Die webwerf</b><span>Jou eie webwerf en e-posadresse, soos hierdie demo. Navrae kom op WhatsApp en e-pos.</span></li><li><b>Die webwerf en jou eie stelsel</b><span>Elke navraag, bespreking en kliënt op een plek, met herinneringe en opvolge wat vanself gaan.</span></li><li><b>Die stelsel en Zara</b><span>Zara antwoord jou oproepe, WhatsApps, Facebook-boodskappe en die webwerf-klets, ook Sondagaand om nege-uur, en sit alles in jou stelsel.</span></li></ol>
-<div class="hz-f"><p>Die koste hang af van wat jy kies. Ons gesels graag oor wat by jou besigheid pas.</p><a class="hz-b" href="https://wa.me/27788617650?text=Hallo%2C%20ek%20het%20die%20demo-webwerf%20vir%20Die%20Plaasdam%20gesien." target="_blank" rel="noopener">Gesels met Hello Zara</a></div>
+<section class="hz-more" id="meer" aria-label="Begin met die webwerf. Groei wanneer jy gereed is."><div class="hz-w">
+<div class="hz-tag">Hello Zara</div><h2>Begin met die webwerf. Groei wanneer jy gereed is.</h2><p class="hz-p">Hierdie demo stuur navrae na WhatsApp. Later kan daar &#x27;n hele stelsel agter jou webwerf wees, net as dit vir jou sin maak.</p>
+<ol><li class="hz-now"><em>Begin hier</em><b>Die webwerf</b><span>Jou eie webwerf en e-posadresse, soos hierdie demo. Navrae kom op WhatsApp en e-pos.</span></li><li class="hz-later"><em>Later, as jy wil</em><b>Die webwerf en jou eie stelsel</b><span>Elke navraag, bespreking en kliënt op een plek, met herinneringe en opvolge wat vanself gaan.</span></li><li class="hz-later"><em>Later, as jy wil</em><b>Die stelsel en Zara</b><span>Zara antwoord jou oproepe, WhatsApps, Facebook-boodskappe en die webwerf-klets, ook Sondagaand om nege-uur, en sit alles in jou stelsel.</span></li></ol>
+<div class="hz-f"><p>Ons begin waar dit vir jou sin maak, en gesels graag oor wat by jou besigheid pas.</p><a class="hz-b" href="https://wa.me/27788617650?text=Hallo%2C%20ek%20het%20die%20demo-webwerf%20vir%20Die%20Plaasdam%20gesien." target="_blank" rel="noopener">Gesels met Hello Zara</a></div>
 </div></section>
 <footer><div class="wrap"><span>© Die Plaasdam</span><span>Demo deur <a href="https://hellozara.solutions">Hello Zara</a></span></div></footer>
 <button class="zara-btn" id="zo" aria-expanded="false" aria-controls="chat"><i>Z</i><span>Vra vir Zara</span></button>

@@ -1,18 +1,18 @@
 """Injects the 'more than a website' section into a demo page (idempotent)."""
 import sys, re, html
 T = {
- 'af': dict(h="Meer as 'n webwerf, as jy wil",
-   p="Hierdie demo stuur navrae na WhatsApp. Agter jou webwerf kan ook 'n hele stelsel wees, as dit vir jou sin maak. Jy kies wat jy nodig het.",
+ 'af': dict(h="Begin met die webwerf. Groei wanneer jy gereed is.",
+   p="Hierdie demo stuur navrae na WhatsApp. Later kan daar 'n hele stelsel agter jou webwerf wees, net as dit vir jou sin maak.",
    c=[("Die webwerf","Jou eie webwerf en e-posadresse, soos hierdie demo. Navrae kom op WhatsApp en e-pos."),
       ("Die webwerf en jou eie stelsel","Elke navraag, bespreking en kliënt op een plek, met herinneringe en opvolge wat vanself gaan."),
       ("Die stelsel en Zara","Zara antwoord jou oproepe, WhatsApps, Facebook-boodskappe en die webwerf-klets, ook Sondagaand om nege-uur, en sit alles in jou stelsel.")],
-   f="Die koste hang af van wat jy kies. Ons gesels graag oor wat by jou besigheid pas.", b="Gesels met Hello Zara", m="Hallo, ek het die demo-webwerf vir {name} gesien."),
- 'en': dict(h="More than a website, if you want it",
-   p="This demo sends enquiries to WhatsApp. Behind your website there can also be a whole system, if it makes sense for you. You choose what you need.",
+   f="Ons begin waar dit vir jou sin maak, en gesels graag oor wat by jou besigheid pas.", b="Gesels met Hello Zara", now="Begin hier", later="Later, as jy wil", m="Hallo, ek het die demo-webwerf vir {name} gesien."),
+ 'en': dict(h="Start with the website. Grow when you're ready.",
+   p="This demo sends enquiries to WhatsApp. Later there can be a whole system behind your website, only if it makes sense for you.",
    c=[("The website","Your own website and email addresses, like this demo. Enquiries arrive on WhatsApp and email."),
       ("The website and your own system","Every enquiry, booking and client in one place, with reminders and follow-ups that happen by themselves."),
       ("The system and Zara","Zara answers your calls, WhatsApps, Facebook messages and the website chat, even at nine on a Sunday night, and puts it all in your system.")],
-   f="The cost depends on what you choose. We'd love to talk about what fits your business.", b="Talk to Hello Zara", m="Hi, I saw the demo website for {name}."),
+   f="We start where it makes sense for you, and we'd love to talk about what fits your business.", b="Talk to Hello Zara", now="Start here", later="Later, if you want", m="Hi, I saw the demo website for {name}."),
 }
 CSS = """<style id="hz-more-css">
 .hz-more{padding:80px 0;background:#f7f5f9;color:#25212b;font-family:inherit}
@@ -20,9 +20,15 @@ CSS = """<style id="hz-more-css">
 .hz-more .hz-tag{font:700 12px/1 system-ui,sans-serif;letter-spacing:.14em;color:#7a3e9d;text-transform:uppercase;margin-bottom:10px}
 .hz-more h2{font-size:clamp(30px,3.6vw,46px);margin:0 0 12px;line-height:1.1}
 .hz-more .hz-p{max-width:60ch;margin:0 0 30px;color:#5a5262}
-.hz-more ol{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;counter-reset:hz}
+.hz-more ol{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:16px;counter-reset:hz;align-items:stretch}
 .hz-more li{counter-increment:hz;background:#fff;border:1px solid #e5dcea;border-radius:14px;padding:22px}
 .hz-more li::before{content:counter(hz);display:inline-grid;place-items:center;width:30px;height:30px;border-radius:50%;background:#7a3e9d;color:#fff;font:700 15px system-ui,sans-serif;margin-bottom:12px}
+.hz-more li em{display:block;font:700 11px system-ui,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#7a3e9d;font-style:normal;margin-bottom:6px}
+.hz-more li.hz-now{border:2px solid #7a3e9d;box-shadow:0 18px 40px rgba(122,62,157,.14);padding:26px}
+.hz-more li.hz-now b{font-size:23px}
+.hz-more li.hz-later{background:transparent;border-style:dashed;opacity:.85}
+.hz-more li.hz-later::before{background:#cdb9da}
+.hz-more li.hz-later em{color:#8a7f92}
 .hz-more li b{display:block;font-size:19px;margin-bottom:6px}
 .hz-more li span{color:#5a5262;font-size:15px;line-height:1.5}
 .hz-more .hz-f{display:flex;flex-wrap:wrap;align-items:center;gap:16px;margin-top:26px}
@@ -35,7 +41,8 @@ CSS = """<style id="hz-more-css">
 def block(lang, name):
     t = T[lang]; e = html.escape
     from urllib.parse import quote
-    lis = ''.join(f'<li><b>{e(a)}</b><span>{e(b)}</span></li>' for a, b in t['c'])
+    tags = (t['now'], t['later'], t['later'])
+    lis = ''.join(f'<li class="{"hz-now" if i == 0 else "hz-later"}"><em>{e(tags[i])}</em><b>{e(a)}</b><span>{e(b)}</span></li>' for i, (a, b) in enumerate(t['c']))
     wa = 'https://wa.me/27788617650?text=' + quote(t['m'].format(name=name))
     return f'''<section class="hz-more" id="meer" aria-label="{e(t["h"])}"><div class="hz-w">
 <div class="hz-tag">Hello Zara</div><h2>{e(t["h"])}</h2><p class="hz-p">{e(t["p"])}</p>
