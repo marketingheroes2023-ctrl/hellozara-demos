@@ -187,7 +187,24 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
   .zara-btn{padding:11px}
 }
 </style>
-</head>
+<style id="hz-more-css">
+.hz-more{padding:80px 0;background:#f7f5f9;color:#25212b;font-family:inherit}
+.hz-more .hz-w{max-width:1180px;margin:0 auto;padding:0 24px}
+.hz-more .hz-tag{font:700 12px/1 system-ui,sans-serif;letter-spacing:.14em;color:#7a3e9d;text-transform:uppercase;margin-bottom:10px}
+.hz-more h2{font-size:clamp(30px,3.6vw,46px);margin:0 0 12px;line-height:1.1}
+.hz-more .hz-p{max-width:60ch;margin:0 0 30px;color:#5a5262}
+.hz-more ol{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;counter-reset:hz}
+.hz-more li{counter-increment:hz;background:#fff;border:1px solid #e5dcea;border-radius:14px;padding:22px}
+.hz-more li::before{content:counter(hz);display:inline-grid;place-items:center;width:30px;height:30px;border-radius:50%;background:#7a3e9d;color:#fff;font:700 15px system-ui,sans-serif;margin-bottom:12px}
+.hz-more li b{display:block;font-size:19px;margin-bottom:6px}
+.hz-more li span{color:#5a5262;font-size:15px;line-height:1.5}
+.hz-more .hz-f{display:flex;flex-wrap:wrap;align-items:center;gap:16px;margin-top:26px}
+.hz-more .hz-f p{margin:0;color:#5a5262}
+.hz-more .hz-b{display:inline-block;background:#7a3e9d;color:#fff;text-decoration:none;font:700 15px system-ui,sans-serif;padding:13px 22px;border-radius:999px}
+.hz-more .hz-b:hover{background:#5f2f7b}
+.hz-more .hz-by{font-size:13px;color:#857c8c;margin-top:14px}
+@media (max-width:820px){.hz-more ol{grid-template-columns:1fr}.hz-more{padding:60px 0}.hz-more .hz-w{padding:0 16px}}
+</style></head>
 <body>
 
 <div class="demo-note">'n Demo-webwerf wat Hello Zara vir Marita by Liplekker Spyseniers ontwerp het. Niks hier is lewendig voor sy ja sê nie. <a href="https://hellozara.solutions">hellozara.solutions</a></div>
@@ -327,6 +344,11 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
 </section>
 </main>
 
+<section class="hz-more" id="meer" aria-label="Meer as &#x27;n webwerf, as jy wil"><div class="hz-w">
+<div class="hz-tag">Hello Zara</div><h2>Meer as &#x27;n webwerf, as jy wil</h2><p class="hz-p">Hierdie demo stuur navrae na WhatsApp. Agter jou webwerf kan ook &#x27;n hele stelsel wees, as dit vir jou sin maak. Jy kies wat jy nodig het.</p>
+<ol><li><b>Die webwerf</b><span>Jou eie webwerf en e-posadresse, soos hierdie demo. Navrae kom op WhatsApp en e-pos.</span></li><li><b>Die webwerf en jou eie stelsel</b><span>Elke navraag, bespreking en kliënt op een plek, met herinneringe en opvolge wat vanself gaan.</span></li><li><b>Die stelsel en Zara</b><span>Zara antwoord jou oproepe, WhatsApps, Facebook-boodskappe en die webwerf-klets, ook Sondagaand om nege-uur, en sit alles in jou stelsel.</span></li></ol>
+<div class="hz-f"><p>Die koste hang af van wat jy kies. Ons gesels graag oor wat by jou besigheid pas.</p><a class="hz-b" href="https://wa.me/27788617650?text=Hallo%2C%20ek%20het%20die%20demo-webwerf%20vir%20Liplekker%20Spyseniers%20gesien." target="_blank" rel="noopener">Gesels met Hello Zara</a></div>
+</div></section>
 <footer><div class="wrap"><span>© Liplekker Spyseniers · Vanderbijlpark</span><span>Demo deur <a href="https://hellozara.solutions">Hello Zara</a></span></div></footer>
 
 <button class="zara-btn" id="zo" aria-expanded="false" aria-controls="chat"><i>Z</i><span>Vra vir Zara</span></button>

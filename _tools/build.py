@@ -248,3 +248,8 @@ const C={json.dumps(js, ensure_ascii=False)};
 for v in VENUES:
     open(D + v['slug'] + '/index.html', 'w').write(page(v))
     print('built', v['slug'])
+
+import importlib.util as _u
+_s = _u.spec_from_file_location('more', os.path.join(os.path.dirname(os.path.abspath(__file__)), 'more.py')); _m = _u.module_from_spec(_s); _s.loader.exec_module(_m)
+for v in VENUES:
+    _m.inject(D + v['slug'] + '/index.html', v['L']['lang'], v['name'], '<footer')
